@@ -21,7 +21,7 @@
     
     프로젝트 명 "우끼"의 풀네임인 우리들의 끼니 해결의 영어 의미인 Solving Our Meals를 줄여 S.O.M (솜)이라 칭함
 
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 ## Team Members Information (팀원 소개)
 
@@ -31,14 +31,14 @@
 |  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EC%A1%B0%ED%98%95%EC%84%9D-blue?style=for-the-badge&logo=react&logoColor=0099e5&logoSize=auto&label=PM&labelColor=ff4c4c&color=34bf49) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EC%9D%B4%ED%98%B8%EC%A4%80-blue?style=for-the-badge&logo=github&logoColor=black&logoSize=auto&label=CM&labelColor=0abf53&color=00112c) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EA%B9%80%EC%A3%BC%ED%98%9C-blue?style=for-the-badge&logo=mysql&logoColor=b3dcff&logoSize=auto&label=DB&labelColor=003b64&color=ce1126) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EC%9D%B4%EC%9D%80%EC%84%9C-blue?style=for-the-badge&logo=files&logoColor=ff7800&logoSize=auto&label=DB&labelColor=2d364c&color=6534ac) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/Passbob) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/Pear1yCode) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/JUHYE0925) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/manbeao) |
 
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Team Rules (팀 규칙) - 수정 예정
 #### 팀 Rule
 #### 팀 규칙
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
@@ -70,7 +70,7 @@
 
 #### 데이터 베이스 관리
     1. MySQL
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
@@ -88,7 +88,7 @@
 
 ### 이은서
     1. DB 관리자 - DB 관리
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
@@ -96,20 +96,20 @@
 ### Ukki (우끼)
     - 우리들의 끼니 해결의 줄임말을 사용
     - 사용자에게 너무 무겁게 다가가지 않도록 의성어 느낌도 받을 수 있도록 프로젝트 이름이자 홈페이지 이름을 정함
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Project Purpose (프로젝트 목적)
     - 혼밥에 대한 인식 개선 및 혼밥에 어려움을 겪는 인원을 돕기 위함
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Project Link (프로젝트 링크) - 수정 예정
 링크 넣을 예정
 
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 <br>
 
 ## Development Period (개발 기간)
@@ -130,7 +130,7 @@
 #### 주요 기능 정리 : 24/12/01 ~ 24/12/02
 
 ~ing
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
@@ -205,7 +205,7 @@
 ### QR Code
     * QR 코드를 이용해 예약 인증 가능
     * QR 코드를 이용해 포인트 사용 가능
-[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
