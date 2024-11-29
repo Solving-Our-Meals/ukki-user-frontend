@@ -1,21 +1,27 @@
 <img src="https://capsule-render.vercel.app/api?type=slice&color=auto&height=100&section=header&text=Ukki&fontSize=70" />
 
-# 목차
-1. Team Information - 팀 소개
-2. Team Members Informantion - 팀원 소개
-3. Team Rules - 팀 규칙
-4. Development Environment - 개발 환경
-5. Project Work Division - 업무 구분
-6. Project Information - 프로젝트 소개
-7. Project Purpose - 프로젝트 목적
-8. Project Link - 프로젝트 링크
-9. Project Development Period - 프로젝트 개발 기간
-10. Introducing The Project Features - 주요 기능
+## 목차
+### [1. Team Information - 팀 소개](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#team-information-%ED%8C%80-%EC%86%8C%EA%B0%9C)
+### [2. Team Members Informantion - 팀원 소개](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#team-members-information-%ED%8C%80%EC%9B%90-%EC%86%8C%EA%B0%9C)
+### [3. Team Rules - 팀 규칙](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#development-environment-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+### [4. Development Environment - 개발 환경](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#development-environment-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+### [5. Project Work Division - 업무 구분](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#project-work-division-%EC%97%85%EB%AC%B4-%EA%B5%AC%EB%B6%84---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+### [6. Project Information - 프로젝트 소개](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#project-information-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9D%B4%EB%A6%84)
+### [7. Project Purpose - 프로젝트 목적](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#project-purpose-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A9%EC%A0%81)
+### [8. Project Link - 프로젝트 링크](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#project-link-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%81%ED%81%AC---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+### [9. Project Development Period - 프로젝트 개발 기간](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#development-period-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EA%B0%84)
+### [10. Introducing The Project Features - 주요 기능](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#introducing-the-project-features-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5)
+
+<br>
+
+# 프로젝트
 
 ## Team Information (팀 소개)
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1000&color=F7A200&width=435&lines=We+are+S.O.M+Team)](https://git.io/typing-svg)
     
     프로젝트 명 "우끼"의 풀네임인 우리들의 끼니 해결의 영어 의미인 Solving Our Meals를 줄여 S.O.M (솜)이라 칭함
+
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
 
 ## Team Members Information (팀원 소개)
 
@@ -25,11 +31,14 @@
 |  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EC%A1%B0%ED%98%95%EC%84%9D-blue?style=for-the-badge&logo=react&logoColor=0099e5&logoSize=auto&label=PM&labelColor=ff4c4c&color=34bf49) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EC%9D%B4%ED%98%B8%EC%A4%80-blue?style=for-the-badge&logo=github&logoColor=black&logoSize=auto&label=CM&labelColor=0abf53&color=00112c) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EA%B9%80%EC%A3%BC%ED%98%9C-blue?style=for-the-badge&logo=mysql&logoColor=b3dcff&logoSize=auto&label=DB&labelColor=003b64&color=ce1126) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-%EC%9D%B4%EC%9D%80%EC%84%9C-blue?style=for-the-badge&logo=files&logoColor=ff7800&logoSize=auto&label=DB&labelColor=2d364c&color=6534ac) |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/Passbob) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/Pear1yCode) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/JUHYE0925) | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  [GitHub](https://github.com/manbeao) |
 
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+
 <br>
 
 ## Team Rules (팀 규칙) - 수정 예정
 #### 팀 Rule
 #### 팀 규칙
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
@@ -61,6 +70,7 @@
 
 #### 데이터 베이스 관리
     1. MySQL
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
@@ -78,18 +88,26 @@
 
 ### 이은서
     1. DB 관리자 - DB 관리
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
-## Project Information (프로젝트 이름)
+## Project Information (프로젝트 소개)
 ### Ukki (우끼)
     - 우리들의 끼니 해결의 줄임말을 사용
     - 사용자에게 너무 무겁게 다가가지 않도록 의성어 느낌도 받을 수 있도록 프로젝트 이름이자 홈페이지 이름을 정함
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Project Purpose (프로젝트 목적)
     - 혼밥에 대한 인식 개선 및 혼밥에 어려움을 겪는 인원을 돕기 위함
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+
+<br>
+
+## Project Link (프로젝트 링크) - 수정 예정
+링크 넣을 예정
 
 <br>
 
@@ -111,7 +129,7 @@
 #### 주요 기능 정리 : 24/12/01 ~ 24/12/02
 
 ~ing
---
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
@@ -186,5 +204,8 @@
 ### QR Code
     * QR 코드를 이용해 예약 인증 가능
     * QR 코드를 이용해 포인트 사용 가능
+[목차로 이동](https://github.com/Solving-Our-Meals/ukki/edit/main/README.md#%EB%AA%A9%EC%B0%A8)
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/a1fcf295-b022-4e0b-8706-b7e9a6af8ce6)
