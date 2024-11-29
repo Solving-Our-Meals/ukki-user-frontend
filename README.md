@@ -45,10 +45,6 @@
 ## Development Environment (개발 환경) - 수정 예정
 나중에 아키텍쳐 형식 이미지로 변경할 예정
 
-#### OS
-    1. Windows10 (23h2)
-    2. Windows11 (24h2)
-
 #### 버전 관리 시스템
     1. Git
     2. Github
@@ -63,10 +59,10 @@
         - SpringBoot
     2. JavaScript
     3. HTML
-        - React
     4. CSS
         - SASS
-    5. MYSQL
+    5. React
+    6. MYSQL
 
 #### 데이터 베이스 관리
     1. MySQL
