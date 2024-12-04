@@ -69,7 +69,14 @@
 
 #### 서버 및 배포 관리
     1. docker
-    
+
+#### 사용폰트 및 이미지 출처
+    1. 프리픽(freepik) 프리미엄 - 결제 완료
+    2. 산돌 웹폰트 - 결제 완료
+    3. 보배섬 진도체
+    4. 프리텐다드
+    5. 문경감홍사과
+
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
