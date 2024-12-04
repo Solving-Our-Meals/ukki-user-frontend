@@ -88,6 +88,7 @@
 
 ### 이은서
     1. DB 관리자 - DB 관리
+    2. 로고 및 캐릭터 디자인, 최근 검색어
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
