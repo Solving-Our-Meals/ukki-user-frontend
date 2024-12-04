@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=slice&color=auto&height=100&section=header&text=Ukki&fontSize=70" />
+<img src="https://capsule-render.vercel.app/api?type=slice&color=pink&height=100&section=header&text=Ukki&fontSize=70" />
 
 ## 목차
 ### [1. Team Information - 팀 소개](https://github.com/Solving-Our-Meals/ukki#team-information-%ED%8C%80-%EC%86%8C%EA%B0%9C)
