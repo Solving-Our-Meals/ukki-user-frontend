@@ -67,9 +67,9 @@
 #### 데이터 베이스 관리
     1. MySQL
 
-#### 서버 관리
-    1. 
-    2. 
+#### 서버 및 배포 관리
+    1. docker
+    
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
