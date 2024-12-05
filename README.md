@@ -101,15 +101,15 @@
 <hr>
 
 >- ##### Font
->    __[Sandol Web Font Cloud](https://www.sandollcloud.com/?lang=ko_KR)__ (Payment) <br>
->    __[BobaesumJindoTTF](https://www.jindo.go.kr/home/sub.cs?m=870)__ <br>
->    __[Pretendard](https://cactus.tistory.com/306)__ <br>
->    __[Mungyeong-Gamhong-Apple](https://www.gbmg.go.kr/portal/contents.do?mId=0501110000)__ <br>
+>    __[Sandol Web Font Cloud](https://www.sandollcloud.com/?lang=ko_KR)__ (Payment & No copyright issues) <br>
+>    __[BobaesumJindoTTF](https://www.jindo.go.kr/home/sub.cs?m=870)__ (No copyright issues) <br>
+>    __[Pretendard](https://cactus.tistory.com/306)__ (No copyright issues) <br>
+>    __[Mungyeong-Gamhong-Apple](https://www.gbmg.go.kr/portal/contents.do?mId=0501110000)__ (No copyright issues) <br>
 
 <hr>
 
 >- ##### Image
->    __[Freepik Premium](https://www.freepik.com/)__ (Payment)
+>    __[Freepik Premium](https://www.freepik.com/)__ (Payment & No copyright issues)
 
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
