@@ -6,7 +6,7 @@
 >### [3. Team Rules - 팀 규칙](https://github.com/Solving-Our-Meals/ukki#team-rules-%ED%8C%80-%EA%B7%9C%EC%B9%99---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
 >### [4. Development Environment - 개발 환경](https://github.com/Solving-Our-Meals/ukki#development-environment-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
 >### [5. Project Work Division - 업무 구분](https://github.com/Solving-Our-Meals/ukki#project-work-division-%EC%97%85%EB%AC%B4-%EA%B5%AC%EB%B6%84---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
->### [6. Project Information - 프로젝트 제목](https://github.com/Solving-Our-Meals/ukki#project-information-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C)
+>### [6. Project Title - 프로젝트 제목](https://github.com/Solving-Our-Meals/ukki-user-frontend?tab=readme-ov-file#project-title)
 >### [7. Project Purpose - 프로젝트 목적](https://github.com/Solving-Our-Meals/ukki#project-purpose-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A9%EC%A0%81)
 >### [8. Project Link - 프로젝트 링크](https://github.com/Solving-Our-Meals/ukki#project-link-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%81%ED%81%AC---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
 >### [9. Project Development Period - 프로젝트 개발 기간](https://github.com/Solving-Our-Meals/ukki#development-period-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EA%B0%84)
@@ -16,7 +16,7 @@
 
 <h1 style="text-decoration-line:none;">프로젝트</h1>
 
-## Team Information (팀 소개)
+## 1. Team Information (팀 소개)
 >[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1000&color=F7A200&width=435&lines=We+are+S.O.M+Team)](https://git.io/typing-svg)
 >
 >- **프로젝트 명 "우끼"의 풀네임인 우리들의 끼니 해결의 영어 의미인 Solving Our Meals를 줄여 S.O.M (솜)이라 칭함**
@@ -25,7 +25,7 @@
 
 <br>
 
-## Team Members Information (팀원 소개)
+## 2. Team Members Information (팀원 소개)
 
 | Project Manager | Configuration Manager | Database Manager | Database Manager |
 |-------------------|-------------------|-------------------|-------------------|
@@ -37,20 +37,15 @@
 
 <br>
 
-## Team Rules (팀 규칙) - 수정 예정
+## 3. Team Rules (팀 규칙) - 수정 예정
 >- #### Team Rules
 >- #### Team Policy
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
-## Development Environment (개발 환경)
-
-~~나중에 아키텍쳐 형식 이미지로 변경~~
-
-<br>
-
-## 개발 언어 및 프레임워크
+## 4. Development Environment (개발 환경) 개발 언어 및 프레임워크
+아키텍쳐 형식 이미지 삽입 필수 !
 
 >- #### Version Management
 >    ![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
@@ -115,7 +110,7 @@
 
 <br>
 
-## Project Work Division (업무 구분) - 수정 예정
+## 5. Project Work Division (업무 구분) - 수정 예정
 >### 조형석
 >__1. QR 코드__
 >__2. 관리자 페이지 구현__
@@ -140,7 +135,7 @@
 
 <br>
 
-## Project Title
+## 6. Project Title (프로젝트 제목)
 ### Ukki (우끼)
 >- **우리들의 끼니 해결의 줄임말을 사용**
 >- **사용자에게 너무 무겁게 다가가지 않도록 의성어 느낌도 받을 수 있도록 프로젝트 이름이자 홈페이지 이름을 정함**
@@ -149,21 +144,21 @@
 
 <br>
 
-## Project Purpose (프로젝트 목적)
+## 7. Project Purpose (프로젝트 목적)
 >- **혼밥에 대한 인식 개선 및 혼밥에 어려움을 겪는 인원을 돕기 위함**
 
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
-## Project Link (프로젝트 링크) - 수정 예정
+## 8. Project Link (프로젝트 링크) - 수정 예정
 __프로젝트 도메인__
 
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
-## Development Period (개발 기간)
+## 9. Development Period (개발 기간)
 
 >- #### 전체 개발 기간 : 24/11/20 ~
 >
@@ -189,7 +184,7 @@ __프로젝트 도메인__
 
 <br>
 
-## Introducing The Project Features (주요 기능)
+## 10. Introducing The Project Features (주요 기능)
 
 ### 플로팅 버튼
     * Home Button (홈)
