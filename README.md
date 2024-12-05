@@ -1,27 +1,29 @@
 <img src="https://capsule-render.vercel.app/api?type=slice&color=auto&height=100&section=header&text=Ukki&fontSize=70" />
 
 ## 목차
-### [1. Team Information - 팀 소개](https://github.com/Solving-Our-Meals/ukki#team-information-%ED%8C%80-%EC%86%8C%EA%B0%9C)
-### [2. Team Members Informantion - 팀원 소개](https://github.com/Solving-Our-Meals/ukki#team-members-information-%ED%8C%80%EC%9B%90-%EC%86%8C%EA%B0%9C)
-### [3. Team Rules - 팀 규칙](https://github.com/Solving-Our-Meals/ukki#team-rules-%ED%8C%80-%EA%B7%9C%EC%B9%99---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
-### [4. Development Environment - 개발 환경](https://github.com/Solving-Our-Meals/ukki#development-environment-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
-### [5. Project Work Division - 업무 구분](https://github.com/Solving-Our-Meals/ukki#project-work-division-%EC%97%85%EB%AC%B4-%EA%B5%AC%EB%B6%84---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
-### [6. Project Information - 프로젝트 소개](https://github.com/Solving-Our-Meals/ukki#project-information-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C)
-### [7. Project Purpose - 프로젝트 목적](https://github.com/Solving-Our-Meals/ukki#project-purpose-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A9%EC%A0%81)
-### [8. Project Link - 프로젝트 링크](https://github.com/Solving-Our-Meals/ukki#project-link-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%81%ED%81%AC---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
-### [9. Project Development Period - 프로젝트 개발 기간](https://github.com/Solving-Our-Meals/ukki#development-period-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EA%B0%84)
-### [10. Introducing The Project Features - 주요 기능](https://github.com/Solving-Our-Meals/ukki#introducing-the-project-features-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5)
+>### [1. Team Information - 팀 소개](https://github.com/Solving-Our-Meals/ukki#team-information-%ED%8C%80-%EC%86%8C%EA%B0%9C)
+>### [2. Team Members Informantion - 팀원 소개](https://github.com/Solving-Our-Meals/ukki#team-members-information-%ED%8C%80%EC%9B%90-%EC%86%8C%EA%B0%9C)
+>### [3. Team Rules - 팀 규칙](https://github.com/Solving-Our-Meals/ukki#team-rules-%ED%8C%80-%EA%B7%9C%EC%B9%99---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+>### [4. Development Environment - 개발 환경](https://github.com/Solving-Our-Meals/ukki#development-environment-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+>### [5. Project Work Division - 업무 구분](https://github.com/Solving-Our-Meals/ukki#project-work-division-%EC%97%85%EB%AC%B4-%EA%B5%AC%EB%B6%84---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+>### [6. Project Information - 프로젝트 소개](https://github.com/Solving-Our-Meals/ukki#project-information-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C)
+>### [7. Project Purpose - 프로젝트 목적](https://github.com/Solving-Our-Meals/ukki#project-purpose-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A9%EC%A0%81)
+>### [8. Project Link - 프로젝트 링크](https://github.com/Solving-Our-Meals/ukki#project-link-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%81%ED%81%AC---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
+>### [9. Project Development Period - 프로젝트 개발 기간](https://github.com/Solving-Our-Meals/ukki#development-period-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EA%B0%84)
+>### [10. Introducing The Project Features - 주요 기능](https://github.com/Solving-Our-Meals/ukki#introducing-the-project-features-%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5)
 
 <br>
 
 # 프로젝트
 
 ## Team Information (팀 소개)
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1000&color=F7A200&width=435&lines=We+are+S.O.M+Team)](https://git.io/typing-svg)
-    
-    프로젝트 명 "우끼"의 풀네임인 우리들의 끼니 해결의 영어 의미인 Solving Our Meals를 줄여 S.O.M (솜)이라 칭함
+>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1000&color=F7A200&width=435&lines=We+are+S.O.M+Team)](https://git.io/typing-svg)
+>
+>- **프로젝트 명 "우끼"의 풀네임인 우리들의 끼니 해결의 영어 의미인 Solving Our Meals를 줄여 S.O.M (솜)이라 칭함**
 
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
+
+<br>
 
 ## Team Members Information (팀원 소개)
 
@@ -36,120 +38,136 @@
 <br>
 
 ## Team Rules (팀 규칙) - 수정 예정
-#### 팀 Rule
-#### 팀 규칙
+>- #### Team Rules
+>- #### Team Policy
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
-## Development Environment (개발 환경) - 수정 예정
-나중에 아키텍쳐 형식 이미지로 변경할 예정
+## Development Environment (개발 환경)
 
-#### 개발 언어 및 프레임워크
+~~나중에 아키텍쳐 형식 이미지로 변경~~
 
-##### Version Management
-![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
-![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+<br>
 
-##### Cooperation
-![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-![KakaoTalk](https://img.shields.io/badge/kakaotalk-ffcd00.svg?style=for-the-badge&logo=kakaotalk&logoColor=000000)
+## 개발 언어 및 프레임워크
 
-##### BackEnd
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![SpringBoot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
-![SpringSecurity](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
+>- #### Version Management
+>    ![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+>    ![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
-##### FrontEnd
-![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+>- ##### Cooperation
+>    ![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+>    ![figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+>    ![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+>    ![KakaoTalk](https://img.shields.io/badge/kakaotalk-ffcd00.svg?style=for-the-badge&logo=kakaotalk&logoColor=000000)
 
-##### DB
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+>- ##### BackEnd
+>    ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+>    ![SpringBoot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+>    ![SpringSecurity](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
 
-##### Server & Distribution
-![DOCKER](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+>- ##### FrontEnd
+>    ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+>    ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+>    ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+>    ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+>    ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-##### Development Tools
-![intelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
-![Vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+>- ##### DB
+>    ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
+>- ##### Server & Distribution
+>    ![DOCKER](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
-##### 사용폰트 및 이미지 출처
-    1. 프리픽(freepik) 프리미엄 - 결제 완료
-    2. 산돌 웹폰트 - 결제 완료
-    3. 보배섬 진도체
-    4. 프리텐다드
-    5. 문경감홍사과
+>- ##### Development Tools
+>    ![intelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+>    ![Vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+>- ##### Font
+>    __[Sandol Web Font Cloud](https://www.sandollcloud.com/?lang=ko_KR)__ (Payment) <br>
+>    __[BobaesumJindoTTF](https://www.jindo.go.kr/home/sub.cs?m=870)__ <br>
+>    __[Pretendard](https://cactus.tistory.com/306)__ <br>
+>    __[Mungyeong-Gamhong-Apple](https://www.gbmg.go.kr/portal/contents.do?mId=0501110000)__ <br>
+
+>- ##### Image
+>    __[Freepik Premium](https://www.freepik.com/)__ (Payment)
 
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Project Work Division (업무 구분) - 수정 예정
-### 조형석
-    1. QR 코드
-    2. 프로젝트 매니저 - 일정 관리
+>### 조형석
+>__1. QR 코드__
+>__2. 관리자 페이지 구현__
+>__3. 프로젝트 매니저 - 일정 관리__
 
-### 이호준
-    1. JWT
-    2. 형상 관리 - github 관리
+>### 이호준
+>__1. JWT 및 시큐리티 관리__
+>__2. 로그인 및 회원가입 구현__
+>__3. 형상 관리 - github 관리__
 
-### 김주혜
-    1. DB 관리자 - DB 관리
+>### 김주혜
+>__1. 예약 페이지 구현__
+>__2. DB 관리자 - DB 관리__
 
-### 이은서
-    1. DB 관리자 - DB 관리
-    2. 로고 및 캐릭터 디자인, 최근 검색어
+>### 이은서
+>__1. 로고 및 캐릭터 디자인 제작__
+>__2. 검색 페이지 구현__
+>__3. 메인 페이지 구현__
+>__4. DB 관리자 - DB 관리__
+
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Project Information (프로젝트 소개)
+
+## Project Title
 ### Ukki (우끼)
-    - 우리들의 끼니 해결의 줄임말을 사용
-    - 사용자에게 너무 무겁게 다가가지 않도록 의성어 느낌도 받을 수 있도록 프로젝트 이름이자 홈페이지 이름을 정함
+>- **우리들의 끼니 해결의 줄임말을 사용**
+>- **사용자에게 너무 무겁게 다가가지 않도록 의성어 느낌도 받을 수 있도록 프로젝트 이름이자 홈페이지 이름을 정함**
+
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Project Purpose (프로젝트 목적)
-    - 혼밥에 대한 인식 개선 및 혼밥에 어려움을 겪는 인원을 돕기 위함
+>- **혼밥에 대한 인식 개선 및 혼밥에 어려움을 겪는 인원을 돕기 위함**
+
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
 
 ## Project Link (프로젝트 링크) - 수정 예정
-링크 넣을 예정
+__프로젝트 도메인__
 
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
+
 <br>
 
 ## Development Period (개발 기간)
-#### 전체 개발 기간 : 24/11/20 ~
 
-#### 주제 선정 및 조정 : 24/11/20 ~ 24/11/22
-
-#### 시장 조사 : 24/11/22 ~ 24/12/01
-      조사 설계 및 계획 : 24/11/20 ~ 24/11/22
-        1차 : 설문 조사 : 24/11/22 ~ 24/11/29
-        2차 : 시장 현황 조사 및 분석 : 24/11/23 ~ 24/11/25
-        3차 : 1차와 2차 기반 보고서 작성 24/11/30 ~ 24/12/01
-
-#### 유사 프로그램 분석 : 24/11/25 ~ 24/11/29
-
-#### 업무 분석 : 24/11/28 ~ 24/11/29
-
-#### 주요 기능 정리 : 24/12/01 ~ 24/12/02
-
-#### Figma 기획 (레이아웃) : 24/11/28 ~ 24/12/01
-
-#### Figma 기획 (완성) : 24/12/01 ~ 24/12/09
+>- #### 전체 개발 기간 : 24/11/20 ~
+>
+>- #### -주제 선정 및 조정 : 24/11/20 ~ 24/11/22
+>
+>- #### *시장 조사 : 24/11/22 ~ 24/12/01
+>>    * **조사 설계 및 계획 : 24/11/20 ~ 24/11/22** <br><br>
+>>>    * **1차 : 설문 조사 : 24/11/22 ~ 24/11/29** <br><br>
+>>>    * **2차 : 시장 현황 조사 및 분석 : 24/11/23 ~ 24/11/25** <br><br>
+>>>    * **3차 : 1차와 2차 기반 보고서 작성 24/11/30 ~ 24/12/01** <br>
+>
+>- #### -유사 프로그램 분석 : 24/11/25 ~ 24/11/29
+>
+>- #### -업무 분석 : 24/11/28 ~ 24/11/29
+>
+>- #### -주요 기능 정리 : 24/12/01 ~ 24/12/02
+>
+>- #### -Figma 기획 (레이아웃) : 24/11/28 ~ 24/12/01
+>
+>- #### -Figma 기획 (완성) : 24/12/01 ~ 24/12/09
 
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
@@ -158,11 +176,10 @@
 ## Introducing The Project Features (주요 기능)
 
 ### 플로팅 버튼
-    * 주요 기능
-    1. 홈
-    2. 스크롤 탑
-    3. 문의하기
-        -> 문의하기에서 데이터베이스 기반 번호를 고르는 것에 따라 안내문구가 나타나고 자세한 문의 버튼을 넣어 1:1 문의로 이동 가능하다. (예약, 환불, 기타 등)
+>- **주요 기능** <br>
+>>    **1. 홈** <br><br>
+>>    **2. 스크롤 탑** <br><br>
+>>    **3. 문의하기 -> 문의하기에서 데이터베이스 기반 번호를 고르는 것에 따라 안내문구가 나타나고 자세한 문의 버튼을 넣어 1:1 문의로 이동 가능하다. (예약, 환불, 기타 등)** <br>
 
 ### 회원가입
     * 약관 동의 및 이메일 인증 후 중복확인 및 유효성 검사를 통해 회원가입 할 수 있다.
