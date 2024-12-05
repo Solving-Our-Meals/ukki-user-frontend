@@ -6,7 +6,7 @@
 >### [3. Team Rules - 팀 규칙](https://github.com/Solving-Our-Meals/ukki#team-rules-%ED%8C%80-%EA%B7%9C%EC%B9%99---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
 >### [4. Development Environment - 개발 환경](https://github.com/Solving-Our-Meals/ukki#development-environment-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
 >### [5. Project Work Division - 업무 구분](https://github.com/Solving-Our-Meals/ukki#project-work-division-%EC%97%85%EB%AC%B4-%EA%B5%AC%EB%B6%84---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
->### [6. Project Information - 프로젝트 소개](https://github.com/Solving-Our-Meals/ukki#project-information-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C)
+>### [6. Project Information - 프로젝트 제목](https://github.com/Solving-Our-Meals/ukki#project-information-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8C%EA%B0%9C)
 >### [7. Project Purpose - 프로젝트 목적](https://github.com/Solving-Our-Meals/ukki#project-purpose-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A9%EC%A0%81)
 >### [8. Project Link - 프로젝트 링크](https://github.com/Solving-Our-Meals/ukki#project-link-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%81%ED%81%AC---%EC%88%98%EC%A0%95-%EC%98%88%EC%A0%95)
 >### [9. Project Development Period - 프로젝트 개발 기간](https://github.com/Solving-Our-Meals/ukki#development-period-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EA%B0%84)
@@ -14,7 +14,7 @@
 
 <br>
 
-# 프로젝트
+<h1 style="text-decoration-line:none;">프로젝트</h1>
 
 ## Team Information (팀 소개)
 >[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=25&pause=1000&color=F7A200&width=435&lines=We+are+S.O.M+Team)](https://git.io/typing-svg)
@@ -139,8 +139,6 @@
 [목차로 이동](https://github.com/Solving-Our-Meals/ukki?tab=readme-ov-file#%EB%AA%A9%EC%B0%A8)
 
 <br>
-
-## Project Information (프로젝트 소개)
 
 ## Project Title
 ### Ukki (우끼)
