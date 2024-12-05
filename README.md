@@ -56,16 +56,22 @@
 >    ![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 >    ![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
+<hr>
+
 >- ##### Cooperation
 >    ![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 >    ![figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 >    ![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 >    ![KakaoTalk](https://img.shields.io/badge/kakaotalk-ffcd00.svg?style=for-the-badge&logo=kakaotalk&logoColor=000000)
 
+<hr>
+
 >- ##### BackEnd
 >    ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 >    ![SpringBoot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 >    ![SpringSecurity](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
+
+<hr>
 
 >- ##### FrontEnd
 >    ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -74,21 +80,31 @@
 >    ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 >    ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
+<hr>
+
 >- ##### DB
 >    ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
+<hr>
 
 >- ##### Server & Distribution
 >    ![DOCKER](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
+<hr>
+
 >- ##### Development Tools
 >    ![intelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 >    ![Vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+<hr>
 
 >- ##### Font
 >    __[Sandol Web Font Cloud](https://www.sandollcloud.com/?lang=ko_KR)__ (Payment) <br>
 >    __[BobaesumJindoTTF](https://www.jindo.go.kr/home/sub.cs?m=870)__ <br>
 >    __[Pretendard](https://cactus.tistory.com/306)__ <br>
 >    __[Mungyeong-Gamhong-Apple](https://www.gbmg.go.kr/portal/contents.do?mId=0501110000)__ <br>
+
+<hr>
 
 >- ##### Image
 >    __[Freepik Premium](https://www.freepik.com/)__ (Payment)
@@ -176,10 +192,10 @@ __프로젝트 도메인__
 ## Introducing The Project Features (주요 기능)
 
 ### 플로팅 버튼
->- **주요 기능** <br>
->>    **1. 홈** <br><br>
->>    **2. 스크롤 탑** <br><br>
->>    **3. 문의하기 -> 문의하기에서 데이터베이스 기반 번호를 고르는 것에 따라 안내문구가 나타나고 자세한 문의 버튼을 넣어 1:1 문의로 이동 가능하다. (예약, 환불, 기타 등)** <br>
+    * Home Button (홈)
+    * Top Scrolling Button (스크롤 탑)
+    * Inquriry Button (문의)
+        -> 문의하기에서 데이터베이스 기반 번호를 고르는 것에 따라 안내문구가 나타나고 자세한 문의 버튼을 넣어 1:1 문의로 이동 가능하다. (예약, 환불, 기타 등)
 
 ### 회원가입
     * 약관 동의 및 이메일 인증 후 중복확인 및 유효성 검사를 통해 회원가입 할 수 있다.
