@@ -45,15 +45,11 @@
 ## Development Environment (개발 환경) - 수정 예정
 나중에 아키텍쳐 형식 이미지로 변경할 예정
 
-#### 버전 관리 시스템
-    1. Git
-    2. Github
-
-#### 개발 도구
-    1. visual studio code
-    2. IntelliJ IDEA
-
 #### 개발 언어 및 프레임워크
+
+##### Version Management
+![git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 ##### Cooperation
 ![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
