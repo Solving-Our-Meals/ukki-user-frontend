@@ -1,5 +1,178 @@
-@charset "UTF-8";
-/* CSS 파일 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ v2.0 | 20110126
+ License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.css");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+}
+
+a:active {
+  text-decoration: none;
+  color: #232323;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BobaesumJindoTTF";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/BobaesumJindoTTF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mungyeong-Gamhong-Apple";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Mungyeong-Gamhong-Apple.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   position: fixed;
   left: 0;
@@ -27,6 +200,8 @@ header img {
 header .menu {
   display: flex;
   gap: 20px;
+  position: relative;
+  right: 3%;
 }
 header .menu a {
   font-family: "Bobaesum Jindo TTF";
@@ -90,76 +265,39 @@ header .menu-button {
   width: 56px;
   height: 56px;
 }
-
-
-
-@media (max-width: 1024px) and (min-width:769px) {
-  header .menu {
-    display: none;
-  }
-  header .menu a {
-    font-size: 1rem;
-  }
-  header .menu a:nth-of-type(5) {
-    font-size: 0.7rem;
-  }
-  header .menu a:nth-of-type(6) {
-    font-size: 0.7rem;
-  }
-  header .menu.open {
-    position: absolute;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    top: 48px;
-    background: #FFF9D1;
-    height: 80px;
-    box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
-  }
-  header .menu-button {
-    display: block;
-    position: absolute;
-  }
-}
-
-@media (max-width: 1024px) and (min-width:769px) {
+@media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    max-height: 48px;
+    width: 100%;
+    max-height: 28px;
   }
   header img {
-    height: 30px;
+    height: 17px;
     width: auto;
+    left: 5%;
   }
-  .menu-button img {
+  header .menu-button {
+    background: none;
+  }
+  header .menu-button img {
     position: absolute;
-    top: 15%;
+    top: 10%;
+    left: 80%;
   }
-  .menu {
-    width: 30px;
-    width: 100%;
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px){
   header .menu {
     display: none;
+    right: 0%;
   }
   header .menu a {
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
   header .menu a:nth-of-type(5) {
-    font-size: 0.5rem;
+    font-size: 0.5rem !important;
   }
   header .menu a:nth-of-type(6) {
-    font-size: 0.5rem;
+    font-size: 0.5rem !important;
   }
   header .menu.open {
     position: absolute;
@@ -178,40 +316,54 @@ header .menu-button {
     position: absolute;
   }
 }
-
-@media (max-width: 768px){
+@media (max-width: 1024px) and (min-width: 769px) {
   header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    max-height: 28px;
+    width: 100%;
+    max-height: 48px;
   }
   header img {
-    height: 17px;
+    height: 30px;
     width: auto;
+    left: 5%;
   }
-  .menu-button img {
+  header .menu-button {
+    background: none;
+  }
+  header .menu-button img {
     position: absolute;
     top: 15%;
+    left: 80%;
   }
-  .menu {
-    width: 30px;
-    width: 100%;
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
+  header .menu {
+    display: none;
+    right: 0%;
   }
-
-  .menu-button img {
+  header .menu a {
+    font-size: 1rem !important;
+  }
+  header .menu a:nth-of-type(5) {
+    font-size: 0.7rem !important;
+  }
+  header .menu a:nth-of-type(6) {
+    font-size: 0.7rem !important;
+  }
+  header .menu.open {
     position: absolute;
-    top: 10%;
-  }
-  .menu {
-    width: 30px;
     width: 100%;
-    display: inline-block;
-    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    top: 48px;
+    background: #FFF9D1;
+    height: 80px;
+    box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
   }
-
+  header .menu-button {
+    display: block;
+    position: absolute;
+  }
 }/*# sourceMappingURL=header.css.map */
