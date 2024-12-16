@@ -1,9 +1,11 @@
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import Layout from './common/header/layouts/Layouts';
+import styles from "../src/common/header/css/reset.css";
+import Layout from "./user/layouts/UserLayout";
+import '../src/common/header/css/reset.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter style={styles}>
     <Routes>
       <Route path="/" element={<Layout/>}>
       </Route>
