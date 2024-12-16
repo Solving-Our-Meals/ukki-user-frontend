@@ -1,14 +1,14 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Layout from './common/header/layouts/Layouts';
 
 function App() {
   return (
-    <>
     <BrowserRouter>
     <Routes>
-      <Route></Route>
+      <Route path="/" element={<Layout/>}>
+      </Route>
     </Routes>
     </BrowserRouter>
-    </>
   );
 }
 
