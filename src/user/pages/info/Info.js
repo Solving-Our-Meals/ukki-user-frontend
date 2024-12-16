@@ -12,6 +12,7 @@ function Info() {
 
     return (
         <>
+        <div className='info'>
             <h1>우리들의 끼니 해결 소개</h1>
             <p>&larr;우리들의 끼니 마스코트 캐릭터</p>
             <h4>캐릭터 이름 : </h4>
@@ -26,7 +27,7 @@ function Info() {
                 참고로 머리 위의 바나나는 머리 위에 놓은걸 까먹고 안먹고 있답니다 (ʃƪ ₀ ³₀)❥
             </span>
             <img src={MainLogo}/>
-
+<div></div>
             <h3>우끼 로고</h3>
             <span>우리들의 끼니 해결 마스코트 캐릭터 우끼링과
                 혼밥이라는 느낌을 주기 위한 칸막이를 넣었고
@@ -37,7 +38,9 @@ function Info() {
             <button>SVG</button>
             <button>JPG</button>
             <img src={ImgLogo} />
+            <p>이미지 로고</p>
             <img src={TextLogo} />
+            <p>텍스트 로고</p>
 
             <h3>우리들의 끼니 해결의 목적</h3>
             <img src={TalkBg} />
@@ -49,11 +52,12 @@ function Info() {
                 우리 프로젝트에 대한 설명과 목적 4줄이상 적기 우리 프로젝트에 대한 설명과 목적 4줄이상 적기 우리 프로젝트에 대한 설명과 목적
                 우리 프로젝트에 대한 설명과 목적 4줄이상 적기 우리 프로젝트에 대한 설명과 목적 4줄이상 적기 우리 프로젝트에 대한 설명과 목적
                 <br/>
+                <br/>
                 우리 프로젝트에 대한 설명과 목적 4줄이상 적기 우리 프로젝트에 대한 설명과 목적 4줄이상 적기 우리 프로젝트에 대한 설명과 목적
             </span>
-            <button>깃허브 가기</button>
+            <button src="https://github.com/Solving-Our-Meals/ukki-front">깃허브 가기</button>
             <button>기획안 보기</button>
-
+            </div>
         </>
     )
 }
