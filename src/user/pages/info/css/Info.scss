@@ -1,18 +1,231 @@
 @import '../../../../reset.scss';
 
-body {
+.info {
     h1 {
         position: absolute;
         width: 544px;
         height: 61px;
-        left: 0px;
-        top: 300px;
+        left: 45%;
+        top: 21%;
         font-family: 'Bobaesum Jindo TTF';
         font-style: normal;
         font-weight: 400;
-        font-size: 55px;
-        line-height: 61px;
+        font-size: 2.5rem;
         color: $textStrong;
 
     }
+
+    img:nth-of-type(1) {
+        position: absolute;
+        width: 450px;
+        left: 20%;
+        top: 19%;
+    }
+
+    p {
+        position: absolute;
+        font-family: 'Pretendard Variable';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        color: $textStrong;
+    }
+
+    p:nth-of-type(1) {
+        width: 394px;
+        left: 45.5%;
+        top: 27%;
+    }
+
+    h4 {
+        position: absolute;
+        width: 253px;
+        left: 45.5%;
+        top: 33%;
+        font-family: 'Bobaesum Jindo TTF';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: $textStrong;
+
+        &:nth-of-type(2) {
+            left: 51.5%;
+            color: $primary;
+        }
+
+        &:nth-of-type(3) {
+            top: 36.5%;
+        }
+
+        &:nth-of-type(4) {
+            top: 36.5%;
+            left: 51.5%;
+            color: $secondary;
+        }
+    }
+
+    span {
+        position: absolute;
+        font-family: 'Pretendard Variable';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        color: $textStrong;
+        line-height: 200%;
+
+    }
+
+    span:nth-of-type(1) {
+        width: 963px;
+        left: 45.5%;
+        top: 42%;
+
+    }
+
+    div {
+        position: absolute;
+        width: 100%;
+        height: 320px;
+        left: 0%;
+        top: 70%;
+        background: #FFF9D3;
+    }
+
+    h3 {
+        position: absolute;
+        font-family: 'Bobaesum Jindo TTF';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        color: $textStrong;
+    }
+
+    h3:nth-of-type(1) {
+        width: 200px;
+        left: 21.5%;
+        top: 75%;
+
+    }
+
+    span:nth-of-type(2) {
+        width: 300px;
+        left: 21.5%;
+        top: 80%;
+        line-height: 150%;
+    }
+
+    p:nth-of-type(2) {
+        width: 300px;
+        left: 22%;
+        top: 90%;
+    }
+
+    button {
+        position: absolute;
+        width: 120px;
+        height: 35px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        color: $textStrong;
+        font-family: 'Pretendard Variable';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+
+    }
+
+    button:nth-of-type(1) {
+        left: 21.5%;
+        top: 95%;
+        background: $secondary;
+    }
+
+    button:nth-of-type(2) {
+        left: 28.5%;
+        top: 95%;
+        background: #FEE283;
+    }
+
+    img:nth-of-type(2) {
+        position: absolute;
+        width: 230px;
+        left: 45%;
+        top: 76%;
+    }
+
+    p:nth-of-type(3) {
+        width: 300px;
+        left: 49%;
+        top: 98%;
+    }
+
+    img:nth-of-type(3) {
+        position: absolute;
+        width: 300px;
+        left: 62.5%;
+        top: 79%;
+    }
+
+    p:nth-of-type(4) {
+        position: absolute;
+        width: 300px;
+        left: 68%;
+        top: 98%;
+    }
+
+    h3:nth-of-type(2) {
+        width: 540px;
+        left: 21%;
+        top: 110%;
+    }
+
+    img:nth-of-type(4) {
+        position: absolute;
+        width: 1100px;
+        left: 21%;
+        top: 121%;
+        z-index: -2;
+    }
+
+    img:nth-of-type(5) {
+        position: absolute;
+        width: 500px;
+        left: 34%;
+        top: 125%;
+        z-index: -1;
+    }
+
+    img:nth-of-type(6) {
+        position: absolute;
+        width: 800px;
+        left: 28%;
+        top: 122%;
+        z-index: 1;
+    }
+
+    span:nth-of-type(3) {
+        width: 1000px;
+        left: 23%;
+        top: 158%;
+        text-align: center;
+
+    }
+
+    button:nth-of-type(3) {
+        width: 150px;
+        height: 45px;
+        left: 40%;
+        top: 180%;
+        background: $primary;
+    }
+
+    button:nth-of-type(4) {
+        width: 150px;
+        height: 45px;
+        left: 52%;
+        top: 180%;
+        background: #FFD4DC;
+    }
+
 }
