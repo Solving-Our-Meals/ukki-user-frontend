@@ -1,4 +1,5 @@
-/* 로그인 페이지 스타일 */
+@charset "UTF-8";
+
 .signupBasic {
     background-color: #FFF3A7;
     height: 100vh;
@@ -120,3 +121,19 @@ color: #000000;
   margin-top: 1px;
   box-shadow: 1px 0px 1px 1px black;
  }
+
+ .inputFieldset {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+ /* 까지가 공통적이라고 할 수 있음 */
+
+/* @media (max-width: 1024px) and (min-width:769px) */
+
+/* @media (max-width: 768px) */
+

@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* CSS 파일 */
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #FFF3A7;
+  box-shadow: 0px 4px 7.3px 1px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 999999;
+}
+header img {
+  position: absolute;
+  left: 3.54%;
+  right: 89.43%;
+  top: 15%;
+  bottom: 21.25%;
+  width: 135px;
+}
+header .menu {
+  display: flex;
+  gap: 20px;
+}
+header .menu a {
+  font-family: "Bobaesum Jindo TTF";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #FF8AA3;
+  transition: color 1s;
+  position: relative;
+}
+header .menu a:hover {
+  color: #FF5176;
+}
+header .menu a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #FF5176;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 1s ease-in-out;
+  border-radius: 50px;
+}
+header .menu a::before {
+  height: 0.15rem;
+}
+header .menu a:hover::before {
+  width: 2.5rem;
+}
+header .menu a:nth-of-type(3):hover::before {
+  width: 5.5rem;
+}
+header .menu a:nth-of-type(4):hover::before {
+  width: 6.5rem;
+}
+header .menu a:nth-of-type(5) {
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #232323;
+}
+header .menu a:nth-of-type(6) {
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #232323;
+}
+header .menu-button {
+  position: absolute;
+  right: 7%;
+  top: 0.41%;
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  width: 56px;
+  height: 56px;
+}
+
+
+
+@media (max-width: 1024px) and (min-width:769px) {
+  header .menu {
+    display: none;
+  }
+  header .menu a {
+    font-size: 1rem;
+  }
+  header .menu a:nth-of-type(5) {
+    font-size: 0.7rem;
+  }
+  header .menu a:nth-of-type(6) {
+    font-size: 0.7rem;
+  }
+  header .menu.open {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 48px;
+    background: #FFF9D1;
+    height: 80px;
+    box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
+  }
+  header .menu-button {
+    display: block;
+    position: absolute;
+  }
+}
+
+@media (max-width: 1024px) and (min-width:769px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-height: 48px;
+  }
+  header img {
+    height: 30px;
+    width: auto;
+  }
+  .menu-button img {
+    position: absolute;
+    top: 15%;
+  }
+  .menu {
+    width: 30px;
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px){
+  header .menu {
+    display: none;
+  }
+  header .menu a {
+    font-size: 0.7rem;
+  }
+  header .menu a:nth-of-type(5) {
+    font-size: 0.5rem;
+  }
+  header .menu a:nth-of-type(6) {
+    font-size: 0.5rem;
+  }
+  header .menu.open {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 28px;
+    background: #FFF9D1;
+    height: 50px;
+    box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
+  }
+  header .menu-button {
+    display: block;
+    position: absolute;
+  }
+}
+
+@media (max-width: 768px){
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-height: 28px;
+  }
+  header img {
+    height: 17px;
+    width: auto;
+  }
+  .menu-button img {
+    position: absolute;
+    top: 15%;
+  }
+  .menu {
+    width: 30px;
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-button img {
+    position: absolute;
+    top: 10%;
+  }
+  .menu {
+    width: 30px;
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}/*# sourceMappingURL=header.css.map */
