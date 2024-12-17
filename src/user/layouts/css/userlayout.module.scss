@@ -1,0 +1,23 @@
+
+.layoutStyle {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    flex-shrink: 0; /* 헤더가 줄어들지 않도록 */
+}
+
+.main {
+    flex-grow: 1; /* 메인 콘텐츠 영역이 남은 공간을 차지하도록 */
+    padding: 20px;
+}
+
+.footer {
+    flex-shrink: 0; /* 푸터가 줄어들지 않도록 */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+}
