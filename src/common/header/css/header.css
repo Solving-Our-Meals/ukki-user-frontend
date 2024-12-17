@@ -137,7 +137,8 @@ table {
 
 /* custom */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -179,14 +180,22 @@ header {
   right: 0;
   top: 0;
   background: #FFF3A7;
-  box-shadow: 0px 4px 7.3px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 7.3px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 7.3px 1px rgba(0, 0, 0, 0.25);
   width: 100%;
   height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 999999;
 }
 header img {
@@ -198,10 +207,13 @@ header img {
   width: 135px;
 }
 header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   position: relative;
-  right: 3%;
+  right: -70%;
+  top: 30%;
 }
 header .menu a {
   font-family: "Bobaesum Jindo TTF";
@@ -210,6 +222,7 @@ header .menu a {
   font-size: 1.3rem;
   line-height: 1.5rem;
   color: #FF8AA3;
+  -webkit-transition: color 1s;
   transition: color 1s;
   position: relative;
 }
@@ -224,7 +237,9 @@ header .menu a::before {
   background-color: #FF5176;
   bottom: -7px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: width 1s ease-in-out;
   transition: width 1s ease-in-out;
   border-radius: 50px;
 }
@@ -267,8 +282,13 @@ header .menu-button {
 }
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
     width: 100%;
     max-height: 28px;
@@ -302,24 +322,39 @@ header .menu-button {
   header .menu.open {
     position: absolute;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 28px;
     background: #FFF9D1;
     height: 50px;
-    box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
   }
   header .menu-button {
     display: block;
     position: absolute;
   }
 }
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1440px) and (min-width: 769px) {
   header {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
     width: 100%;
     max-height: 48px;
@@ -353,14 +388,24 @@ header .menu-button {
   header .menu.open {
     position: absolute;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 48px;
     background: #FFF9D1;
     height: 80px;
-    box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 7.3px rgba(0, 0, 0, 0.25);
   }
   header .menu-button {
     display: block;
