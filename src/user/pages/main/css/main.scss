@@ -1,0 +1,98 @@
+@import '../../../../common/header/css/reset.scss';
+
+div {
+    .slidewrap {
+        width: 90vw;
+        height: 75vw;
+        position: relative;
+        overflow: hidden;
+        top: 5vw;
+        left: 3.5vw;
+
+        .slides {
+            display: flex;
+
+            .slide {
+                flex: 0 0 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 90vw;
+                height: 80vh;
+                overflow: hidden;
+
+
+                div {
+                    h3 {
+                        position: absolute;
+                        left: 9vw;
+                        top: 24.5vw;
+                        font-family: 'Bobaesum Jindo TTF';
+                        font-size: 2vw;
+                        color: $primary;
+                        z-index: 1;
+                    }
+
+                    img {
+                        position: absolute;
+                        width: 20vw;
+                        left: 5vw;
+                        top: 18vw;
+                    }
+
+                    p {
+                        position: absolute;
+                        left: 7vw;
+                        top: 29vw;
+                        font-family: 'Pretendard Variable';
+                        font-weight: 700;
+                        font-size: 1.4vw;
+                        color: $textStrong;
+                    }
+
+                    span {
+                        position: absolute;
+                        width: 24vw;
+                        left: 7vw;
+                        top: 32vw;
+                        font-family: 'Pretendard Variable';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1vw;
+                        line-height: 126%;
+                        color: $textStrong;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .search {
+        input {
+            position: absolute;
+            width: 60vw;
+            height: 5vw;
+            left: 20vw;
+            top: 55vw;
+            border-radius: 50px;
+            border: $primary 3px solid;
+            background-color: $secondary2;
+            color: #FEBA00;
+            font-family: 'Pretendard Variable';
+            font-weight: 700;
+            font-size: 1.3vw;
+        }
+
+        img {
+            position: absolute;
+            width: 3.5vw;
+            left: 75vw;
+            top: 55.7vw;
+        }
+    }
+
+    .category{
+        
+    }
+}
