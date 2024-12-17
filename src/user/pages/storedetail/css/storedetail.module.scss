@@ -1,3 +1,5 @@
+@import "../../../../common/reset/reset.scss";
+
 .storeDetail{
 
     .bannerStyle{
@@ -31,6 +33,7 @@
         font-family: 'Bobaesum Jindo TTF';
         font-style: 'regular';
         font-size : 50px;
+        color: $textStrong;
     }
 
     #storeDes{
@@ -42,10 +45,108 @@
         font-family: 'Bobaesum Jindo TTF';
         font-style: 'semi-bold';
         font-size : 25px;
+        color: $textStrong;
+    }
+
+    #mapIcon{
+        position : absolute;
+        width : 145px;
+        height : 164px;
+        left : 85px;
+        top : 730px;
     }
 
     #storeAddress {
-        
+        position : absolute;
+        left : 235px;
+        top : 822px;
+        width : max-content;
+        height: 41px;
+        font-family : 'Pretendard Variable';
+        font-size : 25px;
+        color: $textStrong;
     }
+
+    #distance{
+        position : absolute;
+        left : 235px;
+        top : 778px;
+        width : max-content;
+        font-family : 'Pretendard Variable';
+        font-size : 25px;
+        color : red;
+    }
+
+    #operTime{
+        position : absolute;
+        left : 235px;
+        top : 866px;
+        width : max-content;
+        height: 41px;
+        font-family : 'Pretendard Variable';
+        font-size : 25px;
+        color: $textStrong;
+    }
+
+    #triangle{
+        position : absolute;
+        width : 20px;
+        height : 24px;
+        left : 585px;
+        top : 875px;
+        cursor: pointer;
+    }
+
+    #mapArea{
+        position : absolute;
+        width: 698px;
+        height : 312px;
+        left : 1064px;
+        top : 587px;
+        border : 7.21px solid $primary;
+        border-radius: 36px;
+    }
+
+    .keywordArea{
+        div{
+            position : absolute;
+            top : 990px;
+            width : 240px;
+            height : 61px;
+            background-color: $primary;
+            border-radius: 50px;
+            border-radius: 50px;
+            font-family: 'Pretendard Variable';
+            font-size : 25px;
+            font-style: 'medium';
+            color: $textStrong;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        div:nth-of-type(1){
+            left : 119px;
+        }
     
+        div:nth-of-type(2){
+            left : 401px;
+        }
+    
+        div:nth-of-type(3){
+            left : 683px;
+        }
+    
+        div:nth-of-type(4){
+            left : 965px;
+        }
+        
+        div:nth-of-type(5){
+            left : 1247px;
+        }
+    
+        div:nth-of-type(6){
+            left : 1529px;
+        }
+    }
 }
