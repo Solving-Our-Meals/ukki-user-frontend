@@ -189,7 +189,7 @@ function Signup() {
                 <img className="signupLogo" src="/images/signupLogo.png" alt="회원가입 로고"></img>
                 {step === 1 && (
                     <form onSubmit={handleUsernameSubmit}>
-                        <fieldset className="fieldId">
+                        {/* <fieldset className="fieldId">
                             <input
                                 className="signupId"
                                 type="text"
@@ -199,7 +199,22 @@ function Signup() {
                                 placeholder="아이디 입력"
                                 required
                             />
-                        </fieldset>
+                        </fieldset> */}
+                        <fieldset className="fieldId">
+    <div className="inputWrapper">
+        <input
+            className="signupId"
+            type="text"
+            name="userId"
+            value={formData.userId}
+            onChange={handleChange}
+            id="userId"
+            placeholder="아이디 입력"
+            required
+        />
+        <label htmlFor="userId">아이디 입력</label>
+    </div>
+</fieldset>
                         {error && <p className="error">{error}</p>}
                         <button className="nextButton">다음</button>
                     </form>
