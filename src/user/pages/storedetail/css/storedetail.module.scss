@@ -1,0 +1,51 @@
+.storeDetail{
+
+    .bannerStyle{
+        position : absolute;
+        left : 50px;
+        top : 120px;
+        width : 1805px;
+        height : 381px;
+        border : solid 1px black;
+        // padding-left : 10px;
+
+        #profileStyle{
+            position : absolute;
+            left : 140px;
+            top : 120px;
+            width : 244px;
+            height : 221px;
+            border : solid 1px black;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+    }
+
+    #storeName {
+        position : absolute;
+        width : max-content;
+        height : 55px;
+        left : 112px;
+        top : 627px;
+        font-family: 'Bobaesum Jindo TTF';
+        font-style: 'regular';
+        font-size : 50px;
+    }
+
+    #storeDes{
+        position : absolute;
+        width: max-content;
+        height: 30px;
+        left : 112px;
+        top : 700px;
+        font-family: 'Bobaesum Jindo TTF';
+        font-style: 'semi-bold';
+        font-size : 25px;
+    }
+
+    #storeAddress {
+        
+    }
+    
+}
