@@ -47,6 +47,7 @@ line-height: 62px;
 color: #FF8AA3;
 }
 
+input {
 .signupId {
 position: absolute;
 width: 499.5px;
@@ -62,7 +63,16 @@ font-weight: 700;
 font-size: 25px;
 line-height: 30px;
 padding-left: 10px;
+}
 
+.error {
+position:absolute;
+width: 500px;
+height: 52.5px;
+left: 375px;
+top: 230px;
+color : red;
+line-height: 21px;
 }
 
 .signupId::placeholder {
