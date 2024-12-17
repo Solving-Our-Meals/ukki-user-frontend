@@ -18,7 +18,6 @@
 }
 .storeDetail #storeName {
   position: absolute;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 55px;
@@ -30,7 +29,6 @@
 }
 .storeDetail #storeDes {
   position: absolute;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 30px;
