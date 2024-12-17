@@ -18,9 +18,28 @@ function Signup() {
         }));
     };
 
-    //아이디 중복검사
-    const handleUsernameSubmit = async (e) => {
-        e.preventDefault();
+                // 아이디 유효성 검사
+                const validateUsername = (username) => {
+                const usernamePattern = /^[a-zA-Z0-9_-]{6,15}$/;
+                return usernamePattern.test(username);  // 영문, 숫자, 하이픈, 언더바 가능, 길이 6~15자
+                };
+    
+                // 닉네임 유효성 검사
+                const validateNickname = (nickname) => {
+                const nicknamePattern = /^[a-zA-Z0-9가-힣]{1,12}$/;
+                return nicknamePattern.test(nickname);  // 영문, 숫자, 한글 가능, 길이 1~12자
+                };
+
+                //아이디 중복검사
+                const handleUsernameSubmit = async (e) => {
+                e.preventDefault();
+
+                // 아이디 유효성 검사
+                if (!validateUsername(formData.userid)) {
+                    setError('아이디는 영문, 숫자, 하이픈, 언더바 조합으로 6~15자 이내로 입력해주세요.');
+                    return;
+                }
+
         const response = await fetch('/auth/signupid', {
             method: 'POST',
             headers: {
@@ -111,6 +130,13 @@ function Signup() {
         // 닉네임
         const handleNicknameSubmit = async (e) => {
             e.preventDefault();
+
+            // 닉네임 유효성 검사
+            if (!validateNickname(formData.username)) {
+            setError('닉네임은 영문, 숫자, 한글 조합으로 1~12자 이내로 입력해주세요.');
+            return;
+            }
+
             const response = await fetch('/auth/checknickname', {
                 method: 'POST',
                 headers: {
