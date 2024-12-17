@@ -347,18 +347,18 @@ a:active {
 }
 .info span:nth-of-type(3) {
   width: 1000px;
-  left: 23%;
+  left: 26%;
   top: 158%;
   text-align: center;
 }
-.info button:nth-of-type(3) {
+.info a button:nth-of-type(1) {
   width: 150px;
   height: 45px;
   left: 40%;
   top: 180%;
   background: #FF8AA3;
 }
-.info button:nth-of-type(4) {
+.info a:nth-of-type(2) button {
   width: 150px;
   height: 45px;
   left: 52%;

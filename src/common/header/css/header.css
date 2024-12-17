@@ -201,7 +201,8 @@ header .menu {
   display: flex;
   gap: 20px;
   position: relative;
-  right: 3%;
+  right: -71%;
+  top: 31%;
 }
 header .menu a {
   font-family: "Bobaesum Jindo TTF";

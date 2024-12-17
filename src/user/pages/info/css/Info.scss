@@ -206,26 +206,28 @@
 
     span:nth-of-type(3) {
         width: 1000px;
-        left: 23%;
+        left: 26%;
         top: 158%;
         text-align: center;
 
     }
 
-    button:nth-of-type(3) {
-        width: 150px;
-        height: 45px;
-        left: 40%;
-        top: 180%;
-        background: $primary;
-    }
+    a {
+        button:nth-of-type(1) {
+            width: 150px;
+            height: 45px;
+            left: 40%;
+            top: 180%;
+            background: $primary;
+        }
 
-    button:nth-of-type(4) {
-        width: 150px;
-        height: 45px;
-        left: 52%;
-        top: 180%;
-        background: #FFD4DC;
-    }
+        &:nth-of-type(2) button {
+            width: 150px;
+            height: 45px;
+            left: 52%;
+            top: 180%;
+            background: #FFD4DC;
+        }
 
+    }
 }
