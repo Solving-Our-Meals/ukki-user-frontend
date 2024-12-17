@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import '../css/reset.css';
 import '../css/Signup.css';
+import '../css/reset.css';
 
 function Signup() {
     const [step, setStep] = useState(1);
-    const [formData, setFormData] = useState({ userid: '', password: '', email: '', auth: '', username: '', terms: false });
+    const [formData, setFormData] = useState({ userId: '', userPass: '', email: '', auth: '', userName: '', terms: false });
     const [error, setError] = useState('');
     const [isPasswordValid, setIsPasswordValid] = useState(false);
     const [verificationCodeSent, setVerificationCodeSent] = useState(false);
@@ -14,20 +14,21 @@ function Signup() {
         const { name, value } = e.target;
         setFormData(prevFormData => ({
             ...prevFormData,
-            [name]: value
+            [name]: value // formData의 해당 name 필드를 업데이트
         }));
+        console.log("Updated formData:", { [name]: value });
     };
 
                 // 아이디 유효성 검사
-                const validateUsername = (username) => {
+                const validateUsername = (userId) => {
                 const usernamePattern = /^[a-zA-Z0-9_-]{6,15}$/;
-                return usernamePattern.test(username);  // 영문, 숫자, 하이픈, 언더바 가능, 길이 6~15자
+                return usernamePattern.test(userId);  // 영문, 숫자, 하이픈, 언더바 가능, 길이 6~15자
                 };
     
                 // 닉네임 유효성 검사
-                const validateNickname = (nickname) => {
+                const validateNickname = (userName) => {
                 const nicknamePattern = /^[a-zA-Z0-9가-힣]{1,12}$/;
-                return nicknamePattern.test(nickname);  // 영문, 숫자, 한글 가능, 길이 1~12자
+                return nicknamePattern.test(userName);  // 영문, 숫자, 한글 가능, 길이 1~12자
                 };
 
                 //아이디 중복검사
@@ -35,37 +36,39 @@ function Signup() {
                 e.preventDefault();
 
                 // 아이디 유효성 검사
-                if (!validateUsername(formData.userid)) {
-                    setError('아이디는 영문, 숫자, 하이픈, 언더바 조합으로 6~15자 이내로 입력해주세요.');
+                if (!validateUsername(formData.userId)) {
+                    setError('ⓘ 아이디는 영문, 숫자, 하이픈, 언더바 조합으로 6~15자 이내로 입력해주세요.');
                     return;
                 }
+
+                console.log("Submitting userid:", formData.userId);
 
         const response = await fetch('/auth/signupid', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ userid: formData.userid })
+            body: JSON.stringify({ userId: formData.userId })
         });
         const result = await response.json();
         if (result.isValid) {
             setStep(2); // 아이디가 유효하면 비밀번호 입력 단계로 넘어감
             setError('');
         } else {
-            setError('유효하지 않거나 중복된 아이디입니다.');
+            setError('ⓘ 유효하지 않거나 중복된 아이디입니다.');
         }
     };
 
     // 비밀번호
-    const validatePassword = (password) => {
-        return password.trim().length > 0;  // 공백만 있는지 확인
+    const validatePassword = (userPass) => {
+        return userPass.trim().length > 0;  // 공백만 있는지 확인
     };
 
     const handlePasswordSubmit = async (e) => {
         e.preventDefault();
 
         // 클라이언트에서 비밀번호가 공백인지 확인
-        if (!validatePassword(formData.password)) {
+        if (!validatePassword(formData.userPass)) {
             setError('비밀번호는 필수 입력 항목입니다.');
             return;
         }
@@ -76,7 +79,7 @@ function Signup() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ password: formData.password })
+            body: JSON.stringify({ userPass: formData.userPass })
         });
         const result = await response.json();
 
@@ -132,7 +135,7 @@ function Signup() {
             e.preventDefault();
 
             // 닉네임 유효성 검사
-            if (!validateNickname(formData.username)) {
+            if (!validateNickname(formData.userName)) {
             setError('닉네임은 영문, 숫자, 한글 조합으로 1~12자 이내로 입력해주세요.');
             return;
             }
@@ -142,7 +145,7 @@ function Signup() {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ username: formData.username })
+                body: JSON.stringify({ userName: formData.userName })
             });
             const result = await response.json();
             if (result.isValid) {
@@ -190,8 +193,8 @@ function Signup() {
                             <input
                                 className="signupId"
                                 type="text"
-                                name="userid"
-                                value={formData.userid}
+                                name="userId"
+                                value={formData.userId}
                                 onChange={handleChange}
                                 placeholder="아이디 입력"
                                 required
@@ -206,10 +209,10 @@ function Signup() {
                     <form onSubmit={handlePasswordSubmit}>
                         <fieldset className="fieldId">
                             <input
-                                className="signuPwd"
+                                className="signupPwd"
                                 type="password"
-                                name="password"
-                                value={formData.password}
+                                name="userPass"
+                                value={formData.userPass}
                                 onChange={handleChange}
                                 placeholder="비밀번호 입력"
                                 required
@@ -242,7 +245,7 @@ function Signup() {
                     <form onSubmit={handleVerificationSubmit}>
                         <fieldset className="fieldId">
                             <input
-                                className="signuAuth"
+                                className="signupAuth"
                                 type="text"
                                 name="auth"
                                 value={verificationCode}
@@ -260,10 +263,10 @@ function Signup() {
                     <form onSubmit={handleNicknameSubmit}>
                         <fieldset className="fieldId">
                             <input
-                                className="signupUsername"
+                                className="signupName"
                                 type="text"
-                                name="username"
-                                value={formData.username}
+                                name="userName"
+                                value={formData.userName}
                                 onChange={handleChange}
                                 placeholder="닉네임 입력"
                                 required
