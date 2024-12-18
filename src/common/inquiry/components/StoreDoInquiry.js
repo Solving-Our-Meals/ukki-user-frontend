@@ -50,9 +50,9 @@ function StoreDoInquiry(){
     
     function handleFileChange(e){setInquiryFile(e.target.files[0]); console.log("file 사옹")}
 
+    function handleCancle(){document.getElementById('doInquiryModal').style.display = 'none'; document.getElementById('littleInquiryModal').style.display = 'flex'}
+
     async function fetchCategory(){
-        // const categories = await inquiryCategory();
-        // setCategory([categories[0], categories[1], categories[2], categories[3]])
          const categories = await inquiryCategory(); if (categories && categories.length > 0)
         { setCategory(categories.slice(4, categories.lastIndex))}; // 4번째 ~ 마지막(7번째)
     }
@@ -106,24 +106,24 @@ function StoreDoInquiry(){
 
     return(
         <>
-        <div id='inquiryModal'>
+        <div id='doInquiryModal'>
             <div id='doInquiryText'>문의하기</div>
             <div id='doInquiryTitleText'>문의 제목: </div>
             <form>
-                <input id='inputTitle' type='text' value={inquiryTitle} onChange={handleTitleChange} required/>
+                <input id='inputDoTitle' type='text' value={inquiryTitle} onChange={handleTitleChange} required/>
                 <select id='categorySelection' name='categoryNo' onChange={handleCategoryChange} required>
                     <option className='selectionOption' value="none" selected>문의 카테고리</option>
                     {category.map((item)=>(
                         <option className='selectionOption' value={item.categoryNo}>{item.categoryName}</option>
                     ))}
                 </select>
-                <textarea id='inputContent'  value={inquiryContent} onChange={handleContentChange} required/>
+                <textarea id='inputDoContent'  value={inquiryContent} onChange={handleContentChange} required/>
                 
-                <label id='inquiryFileBtn' htmlFor='inquiryFile' onChange={handleFileChange}>
+                <label id='inquiryDoFileBtn' htmlFor='inquiryDoFile' onChange={handleFileChange}>
                   첨부파일
-                <input type='file' id='inquiryFile'/>
+                <input type='file' id='inquiryDoFile'/>
                 </label>
-                <button type='button' id='inquiryCancleBtn'>취소</button>
+                <button type='button' id='inquiryDoCancleBtn' onClick={handleCancle}>취소</button>
                 <button id='doInquiryBtn' onClick={submit}>확인</button>
             </form>
         </div>
