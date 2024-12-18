@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import styles from '../css/storedetail.module.css';
 import mapIcon from '../images/mapPointer-logo.png';
 import triangleBtn from '../images/inverted_triangle.png';
+import Banner from '../components/Banner';
+import Profile from '../components/Profile';
 
 
 function StoreDetail(){
-
-    // const [dayOfWeek, setDayOfWeek] = useState("");
 
     const [storeInfo, setStoreInfo] = useState({
         storeNo : 0,
@@ -63,8 +63,8 @@ function StoreDetail(){
 
     return(
         <div className={styles.storeDetail}>
-            <div className={styles.bannerStyle}>배너 영역
-                <div id={styles.profileStyle}>프로필영역</div>
+            <div className={styles.bannerStyle}><Banner/>
+                <div id={styles.profileStyle}><Profile/></div>
             </div>
             <p id={styles.storeName}>{storeInfo.storeName}</p>
             <p id={styles.storeDes}>{`식당 소개 : ${storeInfo.storeDes}`}</p>
