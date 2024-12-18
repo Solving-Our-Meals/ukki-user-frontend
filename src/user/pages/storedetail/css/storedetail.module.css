@@ -174,15 +174,7 @@ a:active {
   font-weight: normal;
   font-style: normal;
 }
-.storeDetail .bannerStyle {
-  position: absolute;
-  left: 50px;
-  top: 120px;
-  width: 1805px;
-  height: 381px;
-  border: solid 1px black;
-}
-.storeDetail .bannerStyle #profileStyle {
+.storeDetail #profileStyle {
   position: absolute;
   left: 140px;
   top: 120px;
@@ -194,6 +186,7 @@ a:active {
 }
 .storeDetail #storeName {
   position: absolute;
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 55px;
@@ -206,6 +199,7 @@ a:active {
 }
 .storeDetail #storeDes {
   position: absolute;
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 30px;
@@ -260,10 +254,10 @@ a:active {
 }
 .storeDetail #triangle {
   position: absolute;
-  width: 20px;
-  height: 24px;
-  left: 585px;
-  top: 875px;
+  width: 18px;
+  height: 22px;
+  left: 573px;
+  top: 868px;
   cursor: pointer;
 }
 .storeDetail #mapArea {
