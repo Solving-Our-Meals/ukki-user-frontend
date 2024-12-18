@@ -201,24 +201,24 @@ function Signup() {
                             />
                         </fieldset> */}
                         <fieldset className="fieldId">
-    <div className="inputWrapper">
-        <input
-            className="signupId"
-            type="text"
-            name="userId"
-            value={formData.userId}
-            onChange={handleChange}
-            id="userId"
-            placeholder="아이디 입력"
-            required
-        />
-        <label htmlFor="userId">아이디 입력</label>
-    </div>
-</fieldset>
+                        <div className="inputWrapper">
+                        <input
+                        className="signupId"
+                        type="text"
+                        name="userId"
+                        value={formData.userId}
+                        onChange={handleChange}
+                        id="userId"
+                        placeholder="아이디 입력"
+                        required
+                        />
+                        <label htmlFor="userId">아이디 입력</label>
+                        </div>
+                        </fieldset>
                         {error && <p className="error">{error}</p>}
                         <button className="nextButton">다음</button>
-                    </form>
-                )}
+                        </form>
+                        )}
 
                 {step === 2 && (
                     <form onSubmit={handlePasswordSubmit}>
@@ -274,7 +274,7 @@ function Signup() {
                     </form>
                 )}
 
-{step === 5 && (
+                {step === 5 && (
                     <form onSubmit={handleNicknameSubmit}>
                         <fieldset className="fieldId">
                             <input
