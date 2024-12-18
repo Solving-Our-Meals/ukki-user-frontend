@@ -137,8 +137,7 @@ table {
 
 /* custom */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -183,23 +182,13 @@ div .slidewrap {
   left: 3.5vw;
 }
 div .slidewrap .slides {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 div .slidewrap .slides .slide {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 0 0 100%;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 90vw;
   height: 80vh;
   overflow: hidden;
@@ -259,4 +248,4 @@ div .search img {
   width: 3.5vw;
   left: 75vw;
   top: 55.7vw;
-}/*# sourceMappingURL=main.css.map */
+}
