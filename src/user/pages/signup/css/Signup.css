@@ -48,7 +48,6 @@ color: #FF8AA3;
 }
 
 input {
-.signupId {
 position: absolute;
 width: 499.5px;
 height: 52.5px;
@@ -147,4 +146,34 @@ color: #000000;
 
 /* @media (max-width: 768px) */
 
+/* 레전드용 */
+label {
+  position: absolute;
+  top: 195px;
+  left: 390px;
+  transform: translateY(-50%);
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #aaa;
+  transition: transform 0.1s ease, font-size 0.1s ease, color 0.1s ease;
+  pointer-events: none; /* 텍스트 클릭 방지 */
+}
+
+/* input에 값이 있거나 포커스되었을 때 */
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: 170px;
+  left: 380px;
+  font-size: 12px;
+  background-color: white;
+  width: 90px;
+  padding-left:10px;
+  color: #007bff; /* 포커스되었을 때 라벨 색상 변경 */
+}
+
+/* placeholder가 나타나지 않게 */
+input::placeholder {
+  visibility: hidden;
 }
