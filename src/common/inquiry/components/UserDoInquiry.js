@@ -12,7 +12,7 @@ function UserDoInquiry(){
     const [selectCategory, setSelectCategory] = useState("");
     const [inquiryTitle, setInquiryTitle] = useState("");
     const [inquiryContent, setInquiryContent] = useState("");
-    const [inquiryFile, setInquiryFile] = useState("");
+    const [inquiryFile, setInquiryFile] = useState(null);
     const [isWrite, setIsWrite] = useState([false, false, false]);
 
 
@@ -48,7 +48,7 @@ function UserDoInquiry(){
         setIsWrite([...isWrite]);
        }}
     
-    function handleFileChange(e){setInquiryFile(e.target.value); console.log("file 사옹")}
+    function handleFileChange(e){setInquiryFile(e.target.files[0]); console.log("file 사옹")}
 
     async function fetchCategory(){
         const categories = await inquiryCategory();
@@ -56,40 +56,84 @@ function UserDoInquiry(){
     }
 
     function submit(e) {
-        e.preventDefault();
-        console.log(inquiryFile)
-        let isPass = false
-        for(var i = 0; i<3; i++){
-          if(isWrite[i]===true){
-            isPass = true
-          }else{
-            isPass = false
-            break;
-          }
+      e.preventDefault();
+      const inquiryDTO = {
+        userNo : 1,
+        inquiryTitle : inquiryTitle,
+        inquiryContent : inquiryContent,
+        categoryNo : selectCategory,
+      }
+      const formData = new FormData();
+      const json = JSON.stringify(inquiryDTO)
+      const blob = new Blob([json], {type: 'application/json'});
+      formData.append("data", blob)
+      formData.append("file", inquiryFile)
+      for (const x of formData.entries()) {
+        console.log(x);
+       };
+      let isPass = false
+      for(var i = 0; i<3; i++){
+        if(isWrite[i]===true){
+          isPass = true
+        }else{
+          isPass = false
+          break;
         }
-        if(isPass){
-        fetch(`/inquiries/users`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            userNo : 1,
-            inquiryTitle : inquiryTitle,
-            inquiryContent : inquiryContent,
-            categoryNo : selectCategory,
-            file : 'file'
-          }),
-        }).then(res => {
-          if(res.ok) {
-            alert(res.message)
-          }
-        })
-      }else{
-        alert("내용을 확인해주세요")
       }
+      if(isPass){
+      fetch(`/inquiries/users`, {
+        method: "POST",
+        headers: {
+          // "Content-Type": "multipart/form-data",
+        },
+        body: formData
+      }).then(res => {
+        if(res.ok) {
+          alert(res.message)
+        }
+      })
+    }else{
+      alert("내용을 확인해주세요")
+    }
 
-      }
+    }
+
+
+    // function submit(e) {
+    //     e.preventDefault();
+    //     console.log(inquiryFile)
+    //     let isPass = false
+    //     for(var i = 0; i<3; i++){
+    //       if(isWrite[i]===true){
+    //         isPass = true
+    //       }else{
+    //         isPass = false
+    //         break;
+    //       }
+    //     }
+    //     if(isPass){
+    //     fetch(`/inquiries/users`, {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //       },
+    //       body: JSON.stringify({
+    //         userNo : 1,
+    //         inquiryTitle : inquiryTitle,
+    //         inquiryContent : inquiryContent,
+    //         categoryNo : selectCategory,
+    //         file : 'file'
+    //       }),
+    //     }).then(res => {
+    //       if(res.ok) {
+    //         alert(res.message)
+    //       }
+    //     })
+    //   }else{
+    //     alert("내용을 확인해주세요")
+    //   }
+
+    //   }
 
     useEffect(()=>{
         fetchCategory()
@@ -110,9 +154,9 @@ function UserDoInquiry(){
                 </select>
                 <textarea id='inputContent'  value={inquiryContent} onChange={handleContentChange} required/>
                 
-                <label id='inquiryFileBtn' htmlFor='inquiryFile'>
+                <label id='inquiryFileBtn' htmlFor='inquiryFile' onChange={handleFileChange}>
                   첨부파일
-                <input type='file' id='inquiryFile' value={inquiryFile} onChange={handleFileChange}/>
+                <input type='file' id='inquiryFile'/>
                 </label>
                 <button type='button' id='inquiryCancleBtn'>취소</button>
                 <button id='doInquiryBtn' onClick={submit}>확인</button>
