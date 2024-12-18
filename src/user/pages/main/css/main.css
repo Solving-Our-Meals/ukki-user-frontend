@@ -172,4 +172,80 @@ a:active {
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/Mungyeong-Gamhong-Apple.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-}/*# sourceMappingURL=reset.module.css.map */
+}
+div .slidewrap {
+  width: 90vw;
+  height: 75vw;
+  position: relative;
+  overflow: hidden;
+  top: 5vw;
+  left: 3.5vw;
+}
+div .slidewrap .slides {
+  display: flex;
+}
+div .slidewrap .slides .slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 80vh;
+  overflow: hidden;
+}
+div .slidewrap .slides .slide div h3 {
+  position: absolute;
+  left: 9vw;
+  top: 24.5vw;
+  font-family: "Bobaesum Jindo TTF";
+  font-size: 2vw;
+  color: #FF8AA3;
+  z-index: 1;
+}
+div .slidewrap .slides .slide div img {
+  position: absolute;
+  width: 20vw;
+  left: 5vw;
+  top: 18vw;
+}
+div .slidewrap .slides .slide div p {
+  position: absolute;
+  left: 7vw;
+  top: 29vw;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 1.4vw;
+  color: #232323;
+}
+div .slidewrap .slides .slide div span {
+  position: absolute;
+  width: 24vw;
+  left: 7vw;
+  top: 32vw;
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1vw;
+  line-height: 126%;
+  color: #232323;
+}
+div .search input {
+  position: absolute;
+  width: 60vw;
+  height: 5vw;
+  left: 20vw;
+  top: 55vw;
+  border-radius: 50px;
+  border: #FF8AA3 3px solid;
+  background-color: #FFF3A7;
+  color: #FEBA00;
+  font-family: "Pretendard Variable";
+  font-weight: 700;
+  font-size: 1.3vw;
+}
+div .search img {
+  position: absolute;
+  width: 3.5vw;
+  left: 75vw;
+  top: 55.7vw;
+}/*# sourceMappingURL=main.css.map */
