@@ -132,13 +132,11 @@ function Signup() {
     const handleVerificationSubmit = async (e) => {
         e.preventDefault();
 
-        // 입력된 인증번호가 없으면 처리하지 않음
         if (!formData.auth) {
             setError('ⓘ 인증번호를 입력해주세요.');
             return;
         }
 
-        // 서버로 인증번호 확인 요청
         const response = await fetch('/auth/verifycode', {
             method: 'POST',
             headers: {
