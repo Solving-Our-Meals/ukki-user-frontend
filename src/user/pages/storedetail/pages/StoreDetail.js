@@ -69,7 +69,6 @@ function StoreDetail(){
             <p id={styles.storeName}>{storeInfo.storeName}</p>
             <p id={styles.storeDes}>{`식당 소개 : ${storeInfo.storeDes}`}</p>
             <img src={mapIcon} id={styles.mapIcon} alt = '지도 아이콘'/>
-            <p id={styles.distance}>지도 api 따 온 후 미사역에서부터의 거리 측정</p>
             <p id={styles.storeAddress}>{storeInfo.storeAddress}</p>
             <p id={styles.operTime}>{`영업 시간(오늘) : ${storeInfo.currentOperationTime}`}</p> 
             <img src={triangleBtn} id={styles.triangle} alt ="영업시간 더보기 버튼"/>
@@ -82,6 +81,7 @@ function StoreDetail(){
                 <div>{storeInfo.storeKeyword.keyword5}</div>
                 <div>{storeInfo.storeKeyword.keyword6}</div>
             </div>
+            <hr id={styles.hr}></hr>
         </div>
     );
 }
