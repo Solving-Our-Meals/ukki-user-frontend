@@ -320,16 +320,19 @@ function Signup() {
 
                 {step === 5 && (
                     <form onSubmit={handleNicknameSubmit}>
-                        <fieldset className="fieldName">
-                            <input
-                                className="signupName"
-                                type="text"
-                                name="userName"
-                                value={formData.userName}
-                                onChange={handleChange}
-                                placeholder="닉네임 입력"
-                                required
-                            />
+                        <fieldset className="fieldAuth">
+                            <div className="inputWrapper">
+                                <input
+                                    className="signupName"
+                                    type="text"
+                                    name="userName"
+                                    value={formData.userName}
+                                    onChange={handleChange}
+                                    id="userName"
+                                    placeholder="닉네임 입력"
+                                />
+                                <label htmlFor="email">닉네임 입력</label>
+                            </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
                         <button className="nextButton">다음</button>
@@ -343,7 +346,7 @@ function Signup() {
                                 type="checkbox"
                                 name="terms"
                                 checked={formData.terms}
-                                onChange={(e) => setFormData({ ...formData, terms: e.target.checked })}
+                                onChange={(e) => setFormData({...formData, terms: e.target.checked})}
                             />
                             <label htmlFor="terms">약관에 동의합니다.</label>
                         </fieldset>
