@@ -283,8 +283,6 @@ div .search img {
   left: 75vw;
   top: 55.7vw;
 }
-
-/* 혹시 몰라 남긴곳곳 */
 div .btn {
   position: relative;
   font-size: 5vw;
@@ -336,4 +334,4 @@ div .category .gkstlr div p {
 }
 div .category .gkstlr div img {
   width: 10vw;
-}/*# sourceMappingURL=main.css.map */
+}
