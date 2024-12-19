@@ -4,7 +4,7 @@ import '../css/doinquiry.css';
 import { inquiryCategory } from '../api/inquiryCategoryAPI';
 
 
-function StoreDoInquiry(){
+function StoreDoInquiry({setIsLittleInquiryModal, setStoreDoInquiry}){
 
     
 
@@ -50,7 +50,10 @@ function StoreDoInquiry(){
     
     function handleFileChange(e){setInquiryFile(e.target.files[0]); console.log("file 사옹")}
 
-    function handleCancle(){document.getElementById('doInquiryModal').style.display = 'none'; document.getElementById('littleInquiryModal').style.display = 'flex'}
+    function handleCancle(){
+      setStoreDoInquiry(false);
+      setIsLittleInquiryModal(true)
+    }
 
     async function fetchCategory(){
          const categories = await inquiryCategory(); if (categories && categories.length > 0)
