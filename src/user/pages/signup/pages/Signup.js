@@ -7,11 +7,9 @@ function Signup() {
     const [formData, setFormData] = useState({ userId: '', userPass: '', email: '', auth: '', userName: '', terms: false });
     const [error, setError] = useState('');
     const [verificationCodeSent, setVerificationCodeSent] = useState(false);
-    const [verificationCode, setVerificationCode] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false); // 이메일 다음 버튼 때문에
     const [emailPending, setEmailPending] = useState(false);  // 이메일 대기
-    const [isLoading, setIsLoading] = useState(false); // 이건 인증번호 로딩용
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -134,10 +132,11 @@ function Signup() {
     const handleVerificationSubmit = async (e) => {
         e.preventDefault();
 
-        console.log('Sending verification code:', verificationCode);  // 인증번호 확인
-        console.log('Sending email:', formData.email);  // 이메일 확인
-
-        setIsLoading(true); // 로딩 시작
+        // 입력된 인증번호가 없으면 처리하지 않음
+        if (!formData.auth) {
+            setError('ⓘ 인증번호를 입력해주세요.');
+            return;
+        }
 
         // 서버로 인증번호 확인 요청
         const response = await fetch('/auth/verifycode', {
@@ -147,7 +146,7 @@ function Signup() {
             },
             body: JSON.stringify({
                 email: formData.email,
-                authCode: verificationCode,
+                authCode: formData.auth,
             }),
         });
 
@@ -316,9 +315,7 @@ function Signup() {
                             </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
-                        <button className="nextButton"
-                                disabled={isLoading}>
-                            {isLoading ? '인증중' : '다음'}
+                        <button className="nextButton">다음
                         </button>
                     </form>
                 )}
