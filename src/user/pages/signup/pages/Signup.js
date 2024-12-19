@@ -11,6 +11,7 @@ function Signup() {
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false); // 이메일 다음 버튼 때문에
     const [emailPending, setEmailPending] = useState(false);  // 이메일 대기
+    const [isLoading, setIsLoading] = useState(false); // 이건 인증번호 로딩용
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -75,6 +76,7 @@ function Signup() {
 
         const result = await response.json();
 
+
         if (result.isValid) {
             setStep(3);
             setError('');
@@ -124,19 +126,18 @@ function Signup() {
             setError('ⓘ 이메일 전송에 실패했습니다. 다시 시도해주세요.');
         }
 
-        setLoading(false);  // 이메일 전송이 완료되면 로딩 상태 해제
-        setEmailPending(false);  // 이메일 전송 대기 상태 해제
+        setLoading(false);
+        setEmailPending(false);
     };
 
     // 이메일 다음 인증번호 부분
     const handleVerificationSubmit = async (e) => {
         e.preventDefault();
 
-        // 입력된 인증번호가 없으면 처리하지 않음
-        if (!verificationCode) {
-            setError('인증번호를 입력해주세요.');
-            return;
-        }
+        console.log('Sending verification code:', verificationCode);  // 인증번호 확인
+        console.log('Sending email:', formData.email);  // 이메일 확인
+
+        setIsLoading(true); // 로딩 시작
 
         // 서버로 인증번호 확인 요청
         const response = await fetch('/auth/verifycode', {
@@ -145,16 +146,15 @@ function Signup() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                email: formData.email,  // 사용자가 입력한 이메일
-                authCode: verificationCode,  // 입력된 인증번호
+                email: formData.email,
+                authCode: verificationCode,
             }),
         });
 
         const result = await response.json();
 
         if (result.isValid) {
-            // 인증번호가 유효한 경우
-            setStep(5);  // 다음 단계로 이동 (닉네임 입력)
+            setStep(5);
             setError('');
         } else {
             // 인증번호가 유효하지 않은 경우
@@ -316,7 +316,10 @@ function Signup() {
                             </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
-                        <button className="nextButton">다음</button>
+                        <button className="nextButton"
+                                disabled={isLoading}>
+                            {isLoading ? '인증중' : '다음'}
+                        </button>
                     </form>
                 )}
 
