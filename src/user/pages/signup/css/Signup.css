@@ -224,3 +224,42 @@ button:disabled {
 .inputWrapper.hidden {
     animation: fadeOut 0.5s forwards;
 }
+
+/* 약관 */
+.termsLabel {
+    position: absolute;
+    width: 1000px;
+    top: 400px;
+}
+
+.fieldTerms {
+    left: 400px;
+    top: 100px;
+    position: absolute;
+    width: 485px;
+    height: 229px;
+    padding: 10px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.signupButton {
+    position: absolute;
+    width: 83px;
+    height: 38px;
+    left: 803px;
+    top: 350px;
+    border: none;
+
+    background: #FF8AA3;
+    border-radius: 25px;
+
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #000000;
+}

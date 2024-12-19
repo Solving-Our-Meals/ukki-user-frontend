@@ -342,16 +342,31 @@ function Signup() {
                 {step === 6 && (
                     <form onSubmit={handleTermsSubmit}>
                         <fieldset className="fieldTerms">
+
+                            {/* 약관 내용 텍스트 */}
+                            <div className="termsContent">
+                                <p>약관 1 : 사이트 이름</p>
+                                <p>약관 1 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                            </div>
+
                             <input
                                 type="checkbox"
                                 name="terms"
                                 checked={formData.terms}
                                 onChange={(e) => setFormData({...formData, terms: e.target.checked})}
                             />
-                            <label htmlFor="terms">약관에 동의합니다.</label>
+                            <label className="termsLabel" htmlFor="terms">약관에 동의합니다.</label>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
-                        <button className="nextButton">회원가입 완료</button>
+                        <button className="signupButton">완료</button>
                     </form>
                 )}
             </div>
