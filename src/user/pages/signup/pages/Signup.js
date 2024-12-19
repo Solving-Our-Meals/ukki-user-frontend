@@ -9,6 +9,8 @@ function Signup() {
     const [verificationCodeSent, setVerificationCodeSent] = useState(false);
     const [verificationCode, setVerificationCode] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+    const [loading, setLoading] = useState(false); // 이메일 다음 버튼 때문에
+    const [emailPending, setEmailPending] = useState(false);  // 이메일 대기
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -85,6 +87,9 @@ function Signup() {
     const handleEmailSubmit = async (e) => {
         e.preventDefault();
 
+        setError('');
+        setEmailPending(true); // 이메일 대기 중 상태 설정
+
         // 이메일 중복
         const emailCheckResponse = await fetch('/auth/checkemail', {
             method: 'POST',
@@ -95,13 +100,13 @@ function Signup() {
         });
 
         const emailCheckResult = await emailCheckResponse.json();
-
         if (emailCheckResult.isDuplicate) {
             setError('ⓘ 이 이메일은 이미 사용 중입니다.');
             return;  // 이메일 중복 시 더 이상 진행하지 않음
         }
 
         // 인증번호 전송
+        setLoading(true);
         const response = await fetch('/auth/sendemail', {
             method: 'POST',
             headers: {
@@ -109,8 +114,8 @@ function Signup() {
             },
             body: JSON.stringify({ email: formData.email }),
         });
-        const result = await response.json();
 
+        const result = await response.json();
         if (result.success) {
             setVerificationCodeSent(true);
             setError('');
@@ -118,6 +123,9 @@ function Signup() {
         } else {
             setError('ⓘ 이메일 전송에 실패했습니다. 다시 시도해주세요.');
         }
+
+        setLoading(false);  // 이메일 전송이 완료되면 로딩 상태 해제
+        setEmailPending(false);  // 이메일 전송 대기 상태 해제
     };
 
     // 이메일 다음 인증번호 부분
@@ -228,12 +236,12 @@ function Signup() {
                                     onChange={handleChange}
                                     id="userId"
                                     placeholder="아이디 입력"
-                                    required
                                 />
                                 <label htmlFor="userId">아이디 입력</label>
                             </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
+                        <button className="loginButton">로그인</button>
                         <button className="nextButton">다음</button>
                     </form>
                 )}
@@ -251,7 +259,6 @@ function Signup() {
                                     onChange={handleChange}
                                     id="userPass"
                                     placeholder="비밀번호 입력"
-                                    required
                                 />
                                 <label htmlFor="userPass">비밀번호 입력</label>
                                 <div className="passwordToggleBtn">
@@ -286,25 +293,30 @@ function Signup() {
                             </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
-                        <button className="nextButton">다음</button>
+                        <button className="nextButton"
+                                disabled={loading || emailPending} // 이메일 전송 중이거나 로딩 중이면 버튼 비활성화
+                        >{loading || emailPending ? '처리중' : '다음'}</button>
                     </form>
                 )}
 
                 {step === 4 && verificationCodeSent && (
                     <form onSubmit={handleVerificationSubmit}>
                         <fieldset className="fieldAuth">
-                            <input
-                                className="signupAuth"
-                                type="text"
-                                name="auth"
-                                value={verificationCode}
-                                onChange={(e) => setVerificationCode(e.target.value)}
-                                placeholder="인증번호 입력"
-                                required
-                            />
+                            <div className="inputWrapper">
+                                <input
+                                    className="signupAuth"
+                                    type="text"
+                                    name="auth"
+                                    value={formData.auth}
+                                    onChange={handleChange}
+                                    id="auth"
+                                    placeholder="인증번호 입력"
+                                />
+                                <label htmlFor="email">인증번호 입력</label>
+                            </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
-                        <button className="nextButton">인증번호 확인</button>
+                        <button className="nextButton">다음</button>
                     </form>
                 )}
 
