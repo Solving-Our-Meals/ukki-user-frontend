@@ -169,7 +169,7 @@ function Signup() {
             return;
         }
 
-        const response = await fetch('/auth/checknickname', {
+        const response = await fetch('/auth/signupnickname', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
