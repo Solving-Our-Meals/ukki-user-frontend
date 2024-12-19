@@ -81,42 +81,76 @@ function Signup() {
         }
     };
 
-    // 이메일 인증번호 보내기
+    // 이메일 관련
     const handleEmailSubmit = async (e) => {
         e.preventDefault();
+
+        // 이메일 중복
+        const emailCheckResponse = await fetch('/auth/checkemail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email: formData.email }),
+        });
+
+        const emailCheckResult = await emailCheckResponse.json();
+
+        if (emailCheckResult.isDuplicate) {
+            setError('ⓘ 이 이메일은 이미 사용 중입니다.');
+            return;  // 이메일 중복 시 더 이상 진행하지 않음
+        }
+
+        // 인증번호 전송
         const response = await fetch('/auth/sendemail', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email: formData.email })
+            body: JSON.stringify({ email: formData.email }),
         });
         const result = await response.json();
+
         if (result.success) {
             setVerificationCodeSent(true);
             setError('');
-            setStep(4);
+            setStep(4); // 인증번호 입력 단계로 이동
         } else {
-            setError('ⓘ 올바른 이메일 형식이 아닙니다.');
+            setError('ⓘ 이메일 전송에 실패했습니다. 다시 시도해주세요.');
         }
     };
 
-    // 이메일 인증번호 확인
+    // 이메일 다음 인증번호 부분
     const handleVerificationSubmit = async (e) => {
         e.preventDefault();
+
+        // 입력된 인증번호가 없으면 처리하지 않음
+        if (!verificationCode) {
+            setError('인증번호를 입력해주세요.');
+            return;
+        }
+
+        // 서버로 인증번호 확인 요청
         const response = await fetch('/auth/verifycode', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email: formData.email, verificationCode })
+            body: JSON.stringify({
+                email: formData.email,  // 사용자가 입력한 이메일
+                authCode: verificationCode,  // 입력된 인증번호
+            }),
         });
+
         const result = await response.json();
-        if (result.success) {
-            setStep(5);
+
+        if (result.isValid) {
+            // 인증번호가 유효한 경우
+            setStep(5);  // 다음 단계로 이동 (닉네임 입력)
             setError('');
         } else {
-            setError('인증번호가 일치하지 않습니다. 다시 시도해 주세요.');
+            // 인증번호가 유효하지 않은 경우
+            setError('ⓘ 인증번호가 올바르지 않습니다.');
         }
     };
 
