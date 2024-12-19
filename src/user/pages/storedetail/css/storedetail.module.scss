@@ -2,15 +2,6 @@
 
 .storeDetail{
 
-    .bannerStyle{
-        position : absolute;
-        left : 50px;
-        top : 120px;
-        width : 1805px;
-        height : 381px;
-        border : solid 1px black;
-        // padding-left : 10px;
-
         #profileStyle{
             position : absolute;
             left : 140px;
@@ -21,8 +12,6 @@
             border-radius: 50px;
             text-align: center;
         }
-
-    }
 
     #storeName {
         position : absolute;
@@ -90,10 +79,10 @@
 
     #triangle{
         position : absolute;
-        width : 20px;
-        height : 24px;
-        left : 585px;
-        top : 875px;
+        width : 18px;
+        height : 22px;
+        left : 573px;
+        top : 868px;
         cursor: pointer;
     }
 

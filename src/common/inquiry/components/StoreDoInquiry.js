@@ -4,7 +4,7 @@ import '../css/doinquiry.css';
 import { inquiryCategory } from '../api/inquiryCategoryAPI';
 
 
-function UserDoInquiry(){
+function StoreDoInquiry(){
 
     
 
@@ -54,7 +54,7 @@ function UserDoInquiry(){
         // const categories = await inquiryCategory();
         // setCategory([categories[0], categories[1], categories[2], categories[3]])
          const categories = await inquiryCategory(); if (categories && categories.length > 0)
-        { setCategory(categories.slice(0, 4))}; // 첫 4개의 카테고리만 설정
+        { setCategory(categories.slice(4, categories.lastIndex))}; // 4번째 ~ 마지막(7번째)
     }
 
     function submit(e) {
@@ -83,7 +83,7 @@ function UserDoInquiry(){
         }
       }
       if(isPass){
-      fetch(`/inquiries/users`, {
+      fetch(`/inquiries/stores`, {
         method: "POST",
         headers: {
           // "Content-Type": "multipart/form-data",
@@ -131,4 +131,4 @@ function UserDoInquiry(){
     )
 }
 
-export default UserDoInquiry;
+export default StoreDoInquiry;
