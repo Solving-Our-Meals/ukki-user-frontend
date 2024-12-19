@@ -174,16 +174,6 @@ a:active {
   font-weight: normal;
   font-style: normal;
 }
-.storeDetail #profileStyle {
-  position: absolute;
-  left: 140px;
-  top: 120px;
-  width: 244px;
-  height: 221px;
-  border: solid 1px black;
-  border-radius: 50px;
-  text-align: center;
-}
 .storeDetail #storeName {
   position: absolute;
   width: -webkit-max-content;
@@ -259,15 +249,6 @@ a:active {
   left: 573px;
   top: 868px;
   cursor: pointer;
-}
-.storeDetail #mapArea {
-  position: absolute;
-  width: 698px;
-  height: 312px;
-  left: 1064px;
-  top: 587px;
-  border: 7.21px solid #FF8AA3;
-  border-radius: 36px;
 }
 .storeDetail .keywordArea div {
   position: absolute;

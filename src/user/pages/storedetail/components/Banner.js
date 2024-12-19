@@ -74,7 +74,7 @@ function Banner() {
             sliderRef.current.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
     }, [currentIndex]);
-
+    
     return (
         <>
             <div className={styles.bannerStyle}>

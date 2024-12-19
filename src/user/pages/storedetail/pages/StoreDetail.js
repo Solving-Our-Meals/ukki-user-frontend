@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import styles from '../css/storedetail.module.css';
-import mapIcon from '../images/mapPointer-logo.png';
+import mapIcon from '../images/mapMarker-logo.png';
 import triangleBtn from '../images/inverted_triangle.png';
 import Banner from '../components/Banner';
 import Profile from '../components/Profile';
+import KakaoMap from '../components/KakaoMap';
 
 
 function StoreDetail(){
@@ -63,8 +64,8 @@ function StoreDetail(){
 
     return(
         <div className={styles.storeDetail}>
-            <div className={styles.bannerStyle}><Banner/>
-                <div id={styles.profileStyle}><Profile/></div>
+            <div><Banner/>
+                <div><Profile/></div>
             </div>
             <p id={styles.storeName}>{storeInfo.storeName}</p>
             <p id={styles.storeDes}>{`식당 소개 : ${storeInfo.storeDes}`}</p>
@@ -73,7 +74,7 @@ function StoreDetail(){
             <p id={styles.storeAddress}>{storeInfo.storeAddress}</p>
             <p id={styles.operTime}>{`영업 시간(오늘) : ${storeInfo.currentOperationTime}`}</p> 
             <img src={triangleBtn} id={styles.triangle} alt ="영업시간 더보기 버튼"/>
-            <div id={styles.mapArea}></div>
+            <div id={styles.mapArea}><KakaoMap/></div>
             <div className={styles.keywordArea}>
                 <div>{storeInfo.storeKeyword.keyword1}</div>
                 <div>{storeInfo.storeKeyword.keyword2}</div>
