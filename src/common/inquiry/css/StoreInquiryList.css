@@ -1,0 +1,198 @@
+
+
+#storeInquiryListModal{
+    display: flex;
+  
+    position: fixed;
+    width: 1541px;
+    height: 644px;
+    left: 194px;
+    top: 163px;
+  
+    background: #FFFFFF;
+  
+    border: 3px solid #FF8AA3;
+    border-radius: 50px;
+    /* z-index: 1000005; */
+  }
+
+  #storeInquiryListText{
+
+
+        position: absolute;
+        width: 176px;
+        height: 56.18px;
+        left: 91px;
+        top: 53px;
+
+        font-family: 'Bobaesum Jindo TTF';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        
+        text-align: center;
+
+        color: #232323;
+
+
+  }
+
+  #cancleInquiryListBtn{
+        position: absolute;
+        width: 180px;
+        height: 51px;
+        left: 1262px;
+        top: 47px;
+
+        background: #FF8AA3;
+        border-radius: 50px;
+
+        font-family: 'Pretendard Variable';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        
+        border: none;
+
+        color: #232323;
+  }
+
+  #listArea{
+    position: absolute;
+        left: 91px;
+        top: 173px;
+  }
+
+  #inquiryListBody{
+    border-bottom: solid 1px #BDBEBF;
+    
+    font-family: 'Pretendard Variable';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    
+    align-items: center;
+    align-content: center;
+    height: 89px;
+
+    
+    color: #232323;
+
+
+  }
+
+  .inquiryState{
+    display: inline-block;
+    width: 391px;
+    
+    align-content: center;
+    padding-left: 5px;
+  }
+
+  .inquiryDate{
+    display: inline-block;
+    width: 315px;
+    align-content: center;
+  }
+
+  .inquiryTitle{
+    display: inline-block;
+    width: 607px;
+    align-content: center;
+    align-items: center;
+  }
+
+  .inquiryTitleText{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+
+  #inquiryListHeader{
+    position: absolute;
+    left: 91px;
+    top: 133px;
+    border-bottom: solid 3px #BDBEBF;
+    
+  }
+
+  .header{
+    height: 37px;
+    padding-left: 10px;
+    align-content: start;
+
+    font-family: 'Pretendard Variable';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    
+
+    color: #232323;
+
+
+  }
+
+  .pageNation{
+    position: absolute;
+    left: 670px;
+    top: 580px;
+    width: 200px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pageNation button{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    color: #FF8AA3;
+    margin-left: 5px;
+  }
+
+  .pageNation button.active{
+    background-color: #FF8AA3;
+    color: white;
+  }
+
+  /* 반응형 */
+@media (max-width: 768px) {
+
+    #storeInquiryListModal{
+  
+      position: fixed;
+      width: 278px;
+      height: 320px;
+      left: 46px;
+      top: 14px;
+  
+      background: #FFFFFF;
+  
+      border: 3px solid #FF8AA3;
+      border-radius: 20px;
+  
+  
+    }
+}
+
+
+/* 반응형 */
+@media (max-width: 768px) {
+
+    #storeInquiryListModal{
+  
+      position: fixed;
+      width: 278px;
+      height: 320px;
+      left: 46px;
+      top: 14px;
+  
+      background: #FFFFFF;
+  
+      border: 3px solid #FF8AA3;
+      border-radius: 20px;
+  
+  
+    }
+}  

@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import '../css/reset.css';
 import '../css/storeInquiryEnter.css'
 import StoreDoInquiry from './StoreDoInquiry';
+import StoreInquiryList from './StoreInquiryList';
 
 function InquiryEnter(){
     const [inquiryList, setInquiryList] = useState(false);
@@ -19,7 +20,10 @@ function InquiryEnter(){
         setIsLittleInquiryModal(false)
     }
 
-    function handlerEnterInquiryList(){setInquiryList(true)}
+    function handlerEnterInquiryList(){
+        setInquiryList(true);
+        setIsLittleInquiryModal(false)
+    }
 
     return(
         <>
@@ -32,6 +36,7 @@ function InquiryEnter(){
             </div>
             }
             {storeDoInquiry && <StoreDoInquiry setStoreDoInquiry={setStoreDoInquiry} setIsLittleInquiryModal={setIsLittleInquiryModal}/>}
+            {inquiryList && <StoreInquiryList setInquiryList={setInquiryList} setIsLittleInquiryModal={setIsLittleInquiryModal}/>}
         </>
     )
 }
