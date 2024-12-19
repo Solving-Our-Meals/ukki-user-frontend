@@ -63,7 +63,7 @@ function StoreDoInquiry({setIsLittleInquiryModal, setStoreDoInquiry}){
     function submit(e) {
       e.preventDefault();
       const inquiryDTO = {
-        userNo : 1,
+        userNo : 3,
         inquiryTitle : inquiryTitle,
         inquiryContent : inquiryContent,
         categoryNo : selectCategory,
