@@ -1,6 +1,8 @@
 
 
-#inquiryModal{
+#doInquiryModal{
+  display: flex;
+
   position: fixed;
   width: 1541px;
   height: 644px;
@@ -26,7 +28,7 @@ font-family: 'Bobaesum Jindo TTF';
 font-style: normal;
 font-weight: 400;
 font-size: 50px;
-line-height: 55px;
+height: 55px;
 
 color: #232323;
 
@@ -51,7 +53,7 @@ color: #232323;
 cursor: default;
 }
 
-#inputTitle{
+#inputDoTitle{
 
 
 position: absolute;
@@ -75,7 +77,7 @@ border: none;
 padding-left: 10px;
 }
 
-#inputContent{
+#inputDoContent{
   /* Rectangle 99 */
 padding-left: 10px;
 padding-top: 20px;
@@ -141,11 +143,11 @@ line-height: 36px;
   background-color: #FEDA00;
 }
 
-#inquiryFile{
+#inquiryDoFile{
   display: none;
 }
 
-#inquiryFileBtn{
+#inquiryDoFileBtn{
 position: absolute;
 width: 255px;
 height: 44px;
@@ -170,7 +172,7 @@ align-content: center;
 cursor: pointer;
 }
 
-#inquiryCancleBtn{
+#inquiryDoCancleBtn{
 
 
 background: #FEDA00;
@@ -220,7 +222,7 @@ cursor: pointer;
 /* 반응형 */
 @media (max-width: 768px) {
 
-  #inquiryModal{
+  #doInquiryModal{
 
     position: fixed;
     width: 278px;
@@ -282,7 +284,7 @@ cursor: pointer;
   
   }
   
-  #inputTitle{
+  #inputDoTitle{
   /* Rectangle 151 */
 
     position: absolute;
@@ -306,7 +308,7 @@ cursor: pointer;
     padding-left: 10px;
   }
   
-  #inputContent{
+  #inputDoContent{
     padding-left: 5px;
     padding-top: 5px;
 
@@ -364,11 +366,11 @@ cursor: pointer;
     color: #232323;
   }
   
-  #inquiryFile{
+  #inquiryDoFile{
     display: none;
   }
   
-  #inquiryFileBtn{
+  #inquiryDoFileBtn{
 
     position: absolute;
     width: 100px;
@@ -392,7 +394,7 @@ cursor: pointer;
     align-content: center;
   }
   
-  #inquiryCancleBtn{
+  #inquiryDoCancleBtn{
     
     position: absolute;
     width: 54px;
@@ -439,7 +441,7 @@ cursor: pointer;
 
 /* 반응형 */
 @media (max-width: 1440px) and (min-width: 769px) {
-  #inquiryModal{
+  #doInquiryModal{
     /* Rectangle 203 */
 
       position: fixed;
@@ -498,7 +500,7 @@ cursor: pointer;
     
     }
     
-    #inputTitle{
+    #inputDoTitle{
     position: absolute;
     width: 318px;
     height: 32px;
@@ -519,7 +521,7 @@ cursor: pointer;
     padding-left: 8px;
     }
     
-    #inputContent{
+    #inputDoContent{
     padding-left: 10px;
     padding-top: 10px;
     
@@ -577,11 +579,11 @@ cursor: pointer;
       color: #232323;   
     }
     
-    #inquiryFile{
+    #inquiryDoFile{
       display: none;
     }
     
-    #inquiryFileBtn{
+    #inquiryDoFileBtn{
     position: absolute;
     width: 154px;
     height: 27px;
@@ -605,7 +607,7 @@ cursor: pointer;
     align-content: center;
     }
     
-    #inquiryCancleBtn{
+    #inquiryDoCancleBtn{
 
     position: absolute;
     width: 103px;
@@ -621,7 +623,7 @@ cursor: pointer;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
+    height: 30px;
     color: #232323;
     border: none;
     }
@@ -646,7 +648,6 @@ cursor: pointer;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
     color: #232323;
     
     border: none;
