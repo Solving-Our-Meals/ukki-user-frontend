@@ -47,10 +47,10 @@ function Banner() {
     const sliderRef = useRef(null);
 
     useEffect(() => {
-        fetch("http://localhost:8080/storebanner/5")
+        fetch("/storebanner/5")
             .then(res => res.json())
             .then(data => {
-                const imageUrls = data.map(filename => `http://localhost:8080/api/files?filename=${filename}`);
+                const imageUrls = data.map(filename => `/api/files?filename=${filename}`);
                 setImages(imageUrls);
             });
     }, []);
@@ -74,10 +74,10 @@ function Banner() {
             sliderRef.current.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
     }, [currentIndex]);
-
+    
     return (
         <>
-            <div className={styles.bannerStyle}>
+            <div className={styles.bannerStyle} style={{border : '1px solid #000000'}}>
                 <div className={styles.slider} ref={sliderRef}>
                     {images.map((imgSrc, index) => (
                         <div key={index} className={styles.slide}>
@@ -86,7 +86,6 @@ function Banner() {
                     ))}
                 </div>
             </div>
-            <div></div>
         </>
     );
 }
