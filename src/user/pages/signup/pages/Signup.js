@@ -8,6 +8,7 @@ function Signup() {
     const [error, setError] = useState('');
     const [verificationCodeSent, setVerificationCodeSent] = useState(false);
     const [verificationCode, setVerificationCode] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -171,6 +172,10 @@ function Signup() {
         });
     };
 
+    const togglePasswordVisibility = () => {
+        setShowPassword(prevState => !prevState);
+    };
+
     return (
         <div className="signupBasic">
             <div className="signup">
@@ -206,7 +211,7 @@ function Signup() {
                             <div className="inputWrapper">
                                 <input
                                     className="signupPwd"
-                                    type="password"
+                                    type={showPassword ? "text" : "password"}
                                     name="userPass"
                                     value={formData.userPass}
                                     onChange={handleChange}
@@ -215,6 +220,13 @@ function Signup() {
                                     required
                                 />
                                 <label htmlFor="userPass">비밀번호 입력</label>
+                                <div className="passwordToggleBtn">
+                                    <img
+                                        src={showPassword ? "/images/signup/default.png" : "/images/signup/on.png"}
+                                        alt="비밀번호 보이기/숨기기"
+                                        onClick={togglePasswordVisibility}
+                                    />
+                                </div>
                             </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
@@ -225,7 +237,7 @@ function Signup() {
                 {/* 이메일 입력받는 스탭 */}
                 {step === 3 && (
                     <form onSubmit={handleEmailSubmit}>
-                        <fieldset className="fieldEmail">
+                    <fieldset className="fieldEmail">
                             <div className="inputWrapper">
                                 <input
                                     className="signupEmail"
@@ -233,7 +245,7 @@ function Signup() {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    id="userPass"
+                                    id="email"
                                     placeholder="이메일 입력"
                                 />
                                 <label htmlFor="email">이메일 입력</label>

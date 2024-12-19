@@ -158,10 +158,9 @@ label {
   font-size: 50px;
   color: #aaa;
   transition: transform 0.1s ease, font-size 0.1s ease, color 0.1s ease;
-  pointer-events: none; /* 텍스트 클릭 방지 */
+  pointer-events: none;
 }
 
-/* input에 값이 있거나 포커스되었을 때 */
 input:focus + label,
 input:not(:placeholder-shown) + label {
   top: 170px;
@@ -170,10 +169,18 @@ input:not(:placeholder-shown) + label {
   background-color: white;
   width: 90px;
   padding-left:10px;
-  color: #007bff; /* 포커스되었을 때 라벨 색상 변경 */
+  color: #007bff;
 }
 
-/* placeholder가 나타나지 않게 */
 input::placeholder {
   visibility: hidden;
+}
+
+.passwordToggleBtn img {
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    left: 815px;
+    top: 171px;
 }
