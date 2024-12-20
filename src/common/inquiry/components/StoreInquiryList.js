@@ -3,11 +3,17 @@ import '../css/reset.css';
 import '../css/StoreInquiryList.css'
 import { inquiryList } from '../api/inquiryListAPI';
 import { reportList } from '../api/reportListAPI';
+import StoreReportInfo from './StoreReportInfo';
+import StoreInquiryInfo from './StoreInquiryInfo';
+
 
 function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
 
     const [listInfo, setListInfo] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
+    const [isReport, setIsReport] = useState(false);
+    const [isInquiry, setIsInquiry] = useState(false);
+    const [inquiryNo, setInquiryNo] = useState(0);
     const itemsPerPage = 4;
     
         async function fetchList(){
@@ -39,6 +45,21 @@ function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
             setIsLittleInquiryModal(true)
           }
 
+    function handlerInquiryInfo(className, value){
+        // 추가 로직을 여기서 처리합니다.
+        if (className === "report") 
+            { setIsReport(true);
+                setIsInquiry(false);
+                setInquiryNo(value);
+
+             }
+         else if (className === "inquiry") 
+            { setIsInquiry(true);
+                setIsReport(false);
+                setInquiryNo(value);}
+
+    }
+
     useEffect(()=>{
         fetchList()
     },[])
@@ -52,8 +73,6 @@ function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
     const visiblePageNum=()=>{
         let startPage = Math.max(currentPage-1, 1);
         let endPage = Math.min(currentPage+1, totalPages);
-        console.log(listInfo)
-        console.log(totalPages)
 
         if(currentPage == 1){
             endPage = Math.min(3, totalPages);
@@ -86,7 +105,7 @@ function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
                 </div>
                 <div id='listArea'>
                 {currentItem.map((item, index)=>{ 
-                    return  <div key={index} className={item.division} value={item.no}>
+                    return  <div key={index} className={item.division} value={item.no} onClick={()=>handlerInquiryInfo(item.division, item.no)}>
                                 <div id='inquiryListBody'>
                                 <span className='inquiryState'>{item.state}</span>
                                 <span className='inquiryDate'>{item.inquiryDate}</span>
@@ -107,7 +126,8 @@ function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
                     <button onClick={()=>paginate(currentPage+1)}>▶</button>
             </div>
             </div>
-            
+            {isReport && <StoreReportInfo inquiryNo={inquiryNo} setIsReport={setIsReport}/>}
+            {isInquiry && <StoreInquiryInfo inquiryNo={inquiryNo} setIsInquiry={setIsInquiry}/>}
         </>
     )
 }
