@@ -18,7 +18,7 @@ function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
                 (inquiries && inquiries.length > 0) || (reports && reports.length > 0)
                 ){
                 const list = sortDate(inquiries.concat(reports))
-                console.log(list)
+                
                 setListInfo(list)
                 
              }
@@ -47,7 +47,32 @@ function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItem = listInfo.slice(indexOfFirstItem, indexOfLastItem);
 
-    const paginate = (no) => {if(0<no && no<=listInfo.length/itemsPerPage){setCurrentPage(no)}};
+    const totalPages = Math.ceil(listInfo.length/itemsPerPage);
+
+    const visiblePageNum=()=>{
+        let startPage = Math.max(currentPage-1, 1);
+        let endPage = Math.min(currentPage+1, totalPages);
+        console.log(listInfo)
+        console.log(totalPages)
+
+        if(currentPage == 1){
+            endPage = Math.min(3, totalPages);
+        }else if(currentPage===totalPages)(
+            startPage = Math.max(totalPages-2, 1)
+        )
+
+        let pageNumbers = []
+
+        for(var i = startPage; i <= endPage; i++){
+            pageNumbers.push(i)
+        }
+
+        return pageNumbers;
+    }
+
+    const paginate = (no) => {if(0<no && no<=totalPages){setCurrentPage(no)}};
+
+
 
     return(
         <>
@@ -72,11 +97,11 @@ function StoreInquiryList({setInquiryList, setIsLittleInquiryModal}){
                     })}
                     </div>
                     <div className='pageNation'>
-                    <button onClick={()=>paginate(currentPage-1)}>◀</button>
-                {Array.from({length : Math.ceil(listInfo.length/itemsPerPage)}, (_, index)=>(
-                    <button key={index + 1} onClick={() => paginate(index + 1)}
-                    className={index + 1 === currentPage ? 'active' :''}>
-                        {index+1}
+                    <button onClick={()=>paginate(currentPage-1)} disabled={currentPage === 1}>◀</button>
+                {visiblePageNum().map((pageNum)=>(
+                    <button key={pageNum} onClick={() => paginate(pageNum)}
+                    className={pageNum === currentPage ? 'active' :''}>
+                        {pageNum}
                     </button>
                 ))}
                     <button onClick={()=>paginate(currentPage+1)}>▶</button>
