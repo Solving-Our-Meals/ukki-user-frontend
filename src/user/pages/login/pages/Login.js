@@ -64,7 +64,7 @@ function Login() {
     //     if (result.success) {
     //         setError('');
     //         // 로그인 성공 후 리디렉션 처리
-    //         window.location.href = '/dashboard'; // 예시로 대시보드 페이지로 이동
+    //         window.location.href = '/main';
     //     } else {
     //         setError(result.message || '비밀번호가 잘못되었습니다.');
     //     }
