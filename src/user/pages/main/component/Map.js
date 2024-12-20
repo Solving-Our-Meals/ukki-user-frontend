@@ -1,8 +1,28 @@
-function Map() { 
+import './Map.css';
+import React, { useEffect, useState } from 'react';
 
-    return(
-        <div></div>
-    )
-}
+const { kakao } = window;
+
+const Map = () => {
+    const [map, setMap] = useState(null);
+
+    //처음 지도 그리기
+    useEffect(() => {
+        const container = document.getElementById('map');
+        const options = { center: new kakao.maps.LatLng(33.450701, 126.570667) };
+        const kakaoMap = new kakao.maps.Map(container, options);
+        setMap(kakaoMap);
+    }, [])
+
+    return (
+        <>
+            <div ></div>
+            <div id="map" style={{ width: '99%', height: '500px' }}>
+            </div>
+
+        </>
+    );
+};
+
 
 export default Map;
