@@ -27,7 +27,7 @@ function StoreDoInquiry({setIsLittleInquiryModal, setStoreDoInquiry}){
        }}
     function handleContentChange(e){
       setInquiryContent(e.target.value);
-      console.log(isWrite)
+      
       if(e.target.value==='' || e.target.value===null || e.target.value.length<5){
         isWrite[1] = false
         setIsWrite([...isWrite]);
@@ -48,7 +48,7 @@ function StoreDoInquiry({setIsLittleInquiryModal, setStoreDoInquiry}){
         setIsWrite([...isWrite]);
        }}
     
-    function handleFileChange(e){setInquiryFile(e.target.files[0]); console.log("file 사옹")}
+    function handleFileChange(e){setInquiryFile(e.target.files[0]);}
 
     function handleCancle(){
       setStoreDoInquiry(false);
@@ -73,9 +73,9 @@ function StoreDoInquiry({setIsLittleInquiryModal, setStoreDoInquiry}){
       const blob = new Blob([json], {type: 'application/json'});
       formData.append("data", blob)
       formData.append("file", inquiryFile)
-      for (const x of formData.entries()) {
-        console.log(x);
-       };
+      // for (const x of formData.entries()) {
+      //   console.log(x);
+      //  };
       let isPass = false
       for(var i = 0; i<3; i++){
         if(isWrite[i]===true){

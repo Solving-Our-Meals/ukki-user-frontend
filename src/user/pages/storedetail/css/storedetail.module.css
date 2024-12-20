@@ -213,8 +213,12 @@ a:active {
 .storeDetail #storeAddress {
   position: absolute;
   left: 235px;
+/* 혹시몰라 주석처리
   top: 780px;
   width: -webkit-max-content;
+*/
+  top: 792px;
+
   width: -moz-max-content;
   width: max-content;
   height: 41px;
@@ -225,8 +229,11 @@ a:active {
 .storeDetail #operTime {
   position: absolute;
   left: 235px;
+/* 혹시 몰라 주석처리
   top: 824px;
   width: -webkit-max-content;
+*/
+  top: 836px;
   width: -moz-max-content;
   width: max-content;
   height: 41px;
