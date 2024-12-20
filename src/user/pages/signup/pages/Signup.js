@@ -4,7 +4,14 @@ import '../css/reset.css';
 
 function Signup() {
     const [step, setStep] = useState(1);
-    const [formData, setFormData] = useState({ userId: '', userPass: '', email: '', auth: '', userName: '', terms: false });
+    const [formData, setFormData] = useState({
+        userId: '',
+        userPass: '',
+        email: '',
+        auth: '',
+        userName: '',
+        terms: false
+    });
     const [error, setError] = useState('');
     const [verificationCodeSent, setVerificationCodeSent] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
@@ -15,7 +22,7 @@ function Signup() {
         const { name, value } = e.target;
         setFormData(prevFormData => ({
             ...prevFormData,
-            [name]: value // formData의 해당 name 필드를 업데이트
+            [name]: value
         }));
         console.log("Updated formData:", { [name]: value });
     };
@@ -102,7 +109,8 @@ function Signup() {
         const emailCheckResult = await emailCheckResponse.json();
         if (emailCheckResult.isDuplicate) {
             setError('ⓘ 이 이메일은 이미 사용 중입니다.');
-            return;  // 이메일 중복 시 더 이상 진행하지 않음
+            setEmailPending(false);
+            return;
         }
 
         // 인증번호 전송
@@ -132,13 +140,11 @@ function Signup() {
     const handleVerificationSubmit = async (e) => {
         e.preventDefault();
 
-        // 입력된 인증번호가 없으면 처리하지 않음
         if (!formData.auth) {
             setError('ⓘ 인증번호를 입력해주세요.');
             return;
         }
 
-        // 서버로 인증번호 확인 요청
         const response = await fetch('/auth/verifycode', {
             method: 'POST',
             headers: {
@@ -167,11 +173,11 @@ function Signup() {
 
         // 닉네임 유효성 검사
         if (!validateNickname(formData.userName)) {
-            setError('닉네임은 영문, 숫자, 한글 조합으로 1~12자 이내로 입력해주세요.');
+            setError('ⓘ 닉네임은 영문, 숫자, 한글 조합으로 1~12자 이내로 입력해주세요.');
             return;
         }
 
-        const response = await fetch('/auth/checknickname', {
+        const response = await fetch('/auth/signupnickname', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -183,7 +189,7 @@ function Signup() {
             setStep(6);  // 닉네임이 유효하면 약관 동의 단계로 넘어감
             setError('');
         } else {
-            setError('유효하지 않거나 중복된 닉네임입니다.');
+            setError('ⓘ 유효하지 않거나 중복된 닉네임입니다.');
         }
     };
 
@@ -191,7 +197,7 @@ function Signup() {
     const handleTermsSubmit = (e) => {
         e.preventDefault();
         if (!formData.terms) {
-            setError('약관에 동의해야 합니다.');
+            setError('ⓘ 약관에 동의해야 합니다.');
             return;
         }
 
@@ -205,16 +211,23 @@ function Signup() {
         });
         response.then(res => res.json()).then(result => {
             if (result.success) {
-                alert('회원가입이 완료되었습니다!');
+                alert('ⓘ 회원가입이 완료되었습니다!');
                 setStep(7); // 회원가입 완료 단계로 이동
             } else {
-                setError('회원가입에 실패했습니다.');
+                setError('ⓘ 회원가입에 실패했습니다.');
             }
         });
     };
 
     const togglePasswordVisibility = () => {
         setShowPassword(prevState => !prevState);
+    };
+
+    const checkboxWrapperStyle = {
+        display: 'flex',
+        cursor: 'pointer',
+        transform: error ? 'translate(40px, 200px)' : 'translate(40px, 180px)',
+        width: '1000px',
     };
 
     return (
@@ -228,7 +241,7 @@ function Signup() {
                         <fieldset className="fieldId">
                             <div className="inputWrapper">
                                 <input
-                                    className="signupId"
+                                    className={`signupId ${error ? 'errorInput' : ''}`}
                                     type="text"
                                     name="userId"
                                     value={formData.userId}
@@ -251,7 +264,7 @@ function Signup() {
                         <fieldset className="fieldPwd">
                             <div className="inputWrapper">
                                 <input
-                                    className="signupPwd"
+                                    className={`signupPwd ${error ? 'errorInput' : ''}`}
                                     type={showPassword ? "text" : "password"}
                                     name="userPass"
                                     value={formData.userPass}
@@ -280,7 +293,7 @@ function Signup() {
                     <fieldset className="fieldEmail">
                             <div className="inputWrapper">
                                 <input
-                                    className="signupEmail"
+                                    className={`signupEmail ${error ? 'errorInput' : ''}`}
                                     type="text"
                                     name="email"
                                     value={formData.email}
@@ -303,7 +316,7 @@ function Signup() {
                         <fieldset className="fieldAuth">
                             <div className="inputWrapper">
                                 <input
-                                    className="signupAuth"
+                                    className={`signupAuth  ${error ? 'errorInput' : ''}`}
                                     type="text"
                                     name="auth"
                                     value={formData.auth}
@@ -322,16 +335,19 @@ function Signup() {
 
                 {step === 5 && (
                     <form onSubmit={handleNicknameSubmit}>
-                        <fieldset className="fieldName">
-                            <input
-                                className="signupName"
-                                type="text"
-                                name="userName"
-                                value={formData.userName}
-                                onChange={handleChange}
-                                placeholder="닉네임 입력"
-                                required
-                            />
+                        <fieldset className="fieldAuth">
+                            <div className="inputWrapper">
+                                <input
+                                    className={`signupName ${error ? 'errorInput' : ''}`}
+                                    type="text"
+                                    name="userName"
+                                    value={formData.userName}
+                                    onChange={handleChange}
+                                    id="userName"
+                                    placeholder="닉네임 입력"
+                                />
+                                <label htmlFor="email">닉네임 입력</label>
+                            </div>
                         </fieldset>
                         {error && <p className="error">{error}</p>}
                         <button className="nextButton">다음</button>
@@ -340,19 +356,36 @@ function Signup() {
 
                 {step === 6 && (
                     <form onSubmit={handleTermsSubmit}>
-                        <fieldset className="fieldTerms">
+                        <fieldset className={`fieldTerms ${error ? 'errorInput' : ''}`}>
+
+                            {/* 약관 내용 텍스트 */}
+                            <div className="termsContent">
+                                <p>약관 1 : 사이트 이름</p>
+                                <p>약관 1 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                                <p>약관 2 : 위 사이트는 우끼라 칭한다.</p>
+                            </div>
+                        </fieldset>
+                        <div className="checkboxWrapper" style={checkboxWrapperStyle}>
+                            <label className="termsLabel" htmlFor="terms">약관에 동의합니다.</label>
                             <input
                                 type="checkbox"
                                 name="terms"
+                                id="terms"
                                 checked={formData.terms}
-                                onChange={(e) => setFormData({ ...formData, terms: e.target.checked })}
+                                onChange={(e) => setFormData({...formData, terms: e.target.checked})}
                             />
-                            <label htmlFor="terms">약관에 동의합니다.</label>
-                        </fieldset>
-                        {error && <p className="error">{error}</p>}
-                        <button className="nextButton">회원가입 완료</button>
+                        </div>
+                        {error && <p className="errorTerms">{error}</p>}
+                            <button className="signupButton">완료</button>
                     </form>
-                )}
+                    )}
             </div>
         </div>
     )
