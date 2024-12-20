@@ -6,6 +6,7 @@ import UserLayout from './user/layouts/UserLayout';
 import StoreDetail from './user/pages/storedetail/pages/StoreDetail';
 import UserDoInquiry from './common/inquiry/components/UserDoInquiry';
 import Main from './user/pages/main/Main';
+import InquiryEnter from './common/inquiry/components/StoreInquiryEnter';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path="main" element={<Main/>}/>
       <Route path="store" element={<StoreDetail/>}/>
       <Route path="inquiries" element={<UserDoInquiry/>}/>
+      <Route path="sinquiries" element={<InquiryEnter/>}/>
       </Route>
     </Routes>
     </BrowserRouter>

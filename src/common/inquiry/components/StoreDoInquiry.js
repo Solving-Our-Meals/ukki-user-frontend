@@ -4,7 +4,7 @@ import '../css/doinquiry.css';
 import { inquiryCategory } from '../api/inquiryCategoryAPI';
 
 
-function UserDoInquiry(){
+function StoreDoInquiry({setIsLittleInquiryModal, setStoreDoInquiry}){
 
     
 
@@ -27,7 +27,7 @@ function UserDoInquiry(){
        }}
     function handleContentChange(e){
       setInquiryContent(e.target.value);
-      console.log(isWrite)
+      
       if(e.target.value==='' || e.target.value===null || e.target.value.length<5){
         isWrite[1] = false
         setIsWrite([...isWrite]);
@@ -48,19 +48,22 @@ function UserDoInquiry(){
         setIsWrite([...isWrite]);
        }}
     
-    function handleFileChange(e){setInquiryFile(e.target.files[0]); console.log("file 사옹")}
+    function handleFileChange(e){setInquiryFile(e.target.files[0]);}
+
+    function handleCancle(){
+      setStoreDoInquiry(false);
+      setIsLittleInquiryModal(true)
+    }
 
     async function fetchCategory(){
-        // const categories = await inquiryCategory();
-        // setCategory([categories[0], categories[1], categories[2], categories[3]])
          const categories = await inquiryCategory(); if (categories && categories.length > 0)
-        { setCategory(categories.slice(0, 4))}; // 첫 4개의 카테고리만 설정
+        { setCategory(categories.slice(4, categories.lastIndex))}; // 4번째 ~ 마지막(7번째)
     }
 
     function submit(e) {
       e.preventDefault();
       const inquiryDTO = {
-        userNo : 1,
+        userNo : 3,
         inquiryTitle : inquiryTitle,
         inquiryContent : inquiryContent,
         categoryNo : selectCategory,
@@ -70,9 +73,9 @@ function UserDoInquiry(){
       const blob = new Blob([json], {type: 'application/json'});
       formData.append("data", blob)
       formData.append("file", inquiryFile)
-      for (const x of formData.entries()) {
-        console.log(x);
-       };
+      // for (const x of formData.entries()) {
+      //   console.log(x);
+      //  };
       let isPass = false
       for(var i = 0; i<3; i++){
         if(isWrite[i]===true){
@@ -83,7 +86,7 @@ function UserDoInquiry(){
         }
       }
       if(isPass){
-      fetch(`/inquiries/users`, {
+      fetch(`/inquiries/stores`, {
         method: "POST",
         headers: {
           // "Content-Type": "multipart/form-data",
@@ -103,8 +106,6 @@ function UserDoInquiry(){
     useEffect(()=>{
         fetchCategory()
     },[])
-
-    function handleCancle(){document.getElementById('doInquiryModal').style.display = 'none';}
 
     return(
         <>
@@ -133,4 +134,4 @@ function UserDoInquiry(){
     )
 }
 
-export default UserDoInquiry;
+export default StoreDoInquiry;
