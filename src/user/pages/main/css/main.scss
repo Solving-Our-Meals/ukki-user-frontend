@@ -218,24 +218,26 @@ div {
             z-index: -1;
             opacity: 0.8;
             top: 76vw;
-            &:nth-of-type(2){
+
+            &:nth-of-type(2) {
                 left: 28vw;
                 top: 78vw;
             }
 
-            &:nth-of-type(3){
+            &:nth-of-type(3) {
                 left: 43.5vw;
             }
 
-            &:nth-of-type(4){
+            &:nth-of-type(4) {
                 left: 59vw;
                 top: 78vw;
             }
 
-            &:nth-of-type(5){
+            &:nth-of-type(5) {
                 left: 74.5vw;
             }
-            &:hover{
+
+            &:hover {
                 opacity: 1;
             }
         }
@@ -252,23 +254,170 @@ div {
             padding: 0.5vw 1vw;
             border-radius: 50px;
 
-            &:nth-of-type(2){
+            &:nth-of-type(2) {
                 left: 30vw;
                 top: 89.5vw;
             }
 
-            &:nth-of-type(3){
+            &:nth-of-type(3) {
                 left: 45.5vw;
             }
 
-            &:nth-of-type(4){
+            &:nth-of-type(4) {
                 left: 61vw;
                 top: 89.5vw;
             }
 
-            &:nth-of-type(5){
+            &:nth-of-type(5) {
                 left: 77vw;
             }
+        }
+    }
+
+    .location {
+        position: absolute;
+        width: 100vw;
+        height: 30vw;
+        top: 100vw;
+        background: $secondary2;
+        left: 0;
+
+        h3 {
+            position: absolute;
+            left: 55vw;
+            top: 5vw;
+            font-family: 'Bobaesum Jindo TTF';
+            font-size: 2vw;
+            color: $textStrong;
+        }
+
+        img:nth-of-type(1) {
+            position: absolute;
+            left: 55vw;
+            width: 9vw;
+            top: 8vw;
+            border: 3px solid #FF8AA3;
+            border-radius: 20px;
+        }
+
+        p {
+            position: absolute;
+            font-family: 'Pretendard Variable';
+            font-weight: 700;
+            font-size: 0.8vw;
+            color: $textStrong;
+        }
+
+        p:nth-of-type(1) {
+            left: 65vw;
+            top: 8.5vw;
+        }
+
+        p:nth-of-type(2) {
+            left: 65vw;
+            top: 10vw;
+        }
+
+        p:nth-of-type(3) {
+            left: 65vw;
+            top: 13vw;
+        }
+
+        span {
+            position: absolute;
+            font-family: 'Pretendard Variable';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.8vw;
+            color: $textStrong;
+        }
+
+        span:nth-of-type(1) {
+            left: 69vw;
+            top: 8.5vw;
+        }
+
+        span:nth-of-type(2) {
+            left: 65vw;
+            top: 11.5vw;
+        }
+
+        span:nth-of-type(3) {
+            left: 70.5vw;
+            top: 13vw;
+        }
+
+        input {
+            position: absolute;
+            width: 20.5vw;
+            height: 2.3vw;
+            background: #FFFFFF;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            color: $textCaption;
+            font-size: 0.8vw;
+            font-weight: normal;
+
+        }
+
+        input:nth-of-type(1) {
+            left: 55vw;
+            top: 15.5vw;
+            text-align: center;
+        }
+
+        input:nth-of-type(2) {
+            left: 55vw;
+            top: 18.5vw;
+            text-align: center;
+        }
+
+        label:nth-of-type(1) {
+            position: absolute;
+            left: 55.5vw;
+            top: 16.6vw;
+            font-family: 'Pretendard Variable';
+            font-weight: 600;
+            font-size: 0.8vw;
+            color: $textStrong;
+        }
+
+        label:nth-of-type(2) {
+            position: absolute;
+            left: 55.5vw;
+            top: 19.6vw;
+            font-family: 'Pretendard Variable';
+            font-weight: 600;
+            font-size: 0.8vw;
+            color: $textStrong;
+        }
+
+        button {
+            position: absolute;
+            width: 9.5vw;
+            height: 1.8vw;
+            left: 55vw;
+            top: 22vw;
+            background: $primary;
+            border-radius: 50px;
+            border: none;
+            color: $textStrong;
+            font-weight: 700;
+            font-family: 'Pretendard Variable';
+            font-size: 0.8vw;
+        }
+
+        button:nth-of-type(2){
+            left: 66vw;
+            background-color: #FFA8B8;
+        }
+        img:nth-of-type(2){
+            position: absolute;
+            width: 7vw;
+            left: 46vw;
+            top: 12vw;
+            z-index: 10;
         }
     }
 }

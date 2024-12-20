@@ -15,7 +15,7 @@ import qorqks from './image/store1.png';
 import ukki from './image/ukiLemone.png';
 import '../../../common/header/css/reset.css';
 import './css/main.css';
-import Map from '../main/component/Map';
+import Map from './component/Map.js';
 
 const banners = [banner1, banner2, banner3, banner4, banner5];
 const storeInfos = [
@@ -185,18 +185,15 @@ const Main = () => {
                 </div>
                 <div className='location'>
                     <Map/>
-
                     <h3>내 주변 한식 혼밥 리스트</h3>
                     <p>가게 이름 : </p> <span>우끼링 백반</span>
                     <p>가게 설명 : </p> <span>아주 맛난 백반 정식을 팔아용</span>
                     <p>가게 대표 매뉴 : </p> <span>불고기 백반</span>
                     <img src={qorqks}/>
                     <img src={ukki}/>
-                    <p>현재 위치 : </p>
-                    <input placeholder='눌러서 현재 위치 변경 가능'></input>
-                    <p>가게 위치 : </p>
-                    <input  placeholder='하남시 덕풍동로 90 802호'></input>
-                    <button>예약 하기</button>
+                    <input value='눌러서 현재 위치 변경 가능'></input><label>현재 위치 : </label>
+                    <input value='하남시 덕풍동로 90 802호'></input><label>가게 위치 : </label>
+                    <button>예약하기</button>
                     <button>길안내</button>
                 </div>
 
