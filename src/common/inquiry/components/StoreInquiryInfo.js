@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import '../css/reset.css';
 import '../css/StoreInquiryInfo.css'
 import { getInquiryDTO } from '../api/inquiryInfoAPI';
 import waitAnswer from '../img/waitAnswer.png'

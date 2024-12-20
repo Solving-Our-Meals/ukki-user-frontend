@@ -15,7 +15,7 @@ import qorqks from './image/store1.png';
 import ukki from './image/ukiLemone.png';
 import '../../../common/header/css/reset.css';
 import './css/main.css';
-import Map from '../main/component/Map';
+
 
 const banners = [banner1, banner2, banner3, banner4, banner5];
 const storeInfos = [
@@ -184,7 +184,7 @@ const Main = () => {
                         <span>흠..별로?</span>
                 </div>
                 <div className='location'>
-                    <Map/>
+             
 
                     <h3>내 주변 한식 혼밥 리스트</h3>
                     <p>가게 이름 : </p> <span>우끼링 백반</span>
