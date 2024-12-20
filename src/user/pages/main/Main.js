@@ -11,6 +11,8 @@ import didtlr from './image/image-1.png';
 import dlftlr from './image/image-2.png';
 import wndtlr from './image/image-3.png';
 import rlxk from './image/image-4.png';
+import qorqks from './image/store1.png';
+import ukki from './image/ukiLemone.png';
 import '../../../common/header/css/reset.css';
 import './css/main.css';
 
@@ -153,42 +155,50 @@ const Main = () => {
                 <div className='category'>
                     <h3>지금 끌리는 메뉴는?</h3>
                     <p>카테고리 별로 근처 식당을 추천해드려요!</p>
-                    <div className='gkstlr'>
                         <div>
                             <p>한식</p>
                         </div>
                         <img src={gkstlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='didtlr'>
                         <div>
                             <p>양식</p>
                         </div>
                         <img src={didtlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='dlftlr'>
                         <div>
                             <p>일식</p>
                         </div>
-                        <img src={didtlr} />
+                        <img src={dlftlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='wndtlr'>
                         <div>
                             <p>중식</p>
                         </div>
                         <img src={wndtlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='rlxk'>
+
                         <div>
                             <p>기타</p>
                         </div>
                         <img src={rlxk} />
                         <span>흠..별로?</span>
-                    </div>
                 </div>
+                <div className='location'>
+
+                    <h3>내 주변 한식 혼밥 리스트</h3>
+                    <p>가게 이름 : </p> <span>우끼링 백반</span>
+                    <p>가게 설명 : </p> <span>아주 맛난 백반 정식을 팔아용</span>
+                    <p>가게 대표 매뉴 : </p> <span>불고기 백반</span>
+                    <img src={qorqks}/>
+                    <img src={ukki}/>
+                    <p>현재 위치 : </p>
+                    <input placeholder='눌러서 현재 위치 변경 가능'></input>
+                    <p>가게 위치 : </p>
+                    <input  placeholder='하남시 덕풍동로 90 802호'></input>
+                    <button>예약하기</button>
+                    <button>길안내</button>
+                </div>
+
+
             </div>
         </>
     );

@@ -137,8 +137,7 @@ table {
 
 /* custom */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -179,8 +178,6 @@ a:active {
 }
 .storeDetail #storeName {
   position: absolute;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   height: 55px;
   left: 112px;
@@ -192,8 +189,6 @@ a:active {
 }
 .storeDetail #storeDes {
   position: absolute;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   height: 30px;
   left: 112px;
@@ -214,8 +209,6 @@ a:active {
   position: absolute;
   left: 235px;
   top: 780px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   height: 41px;
   font-family: "Pretendard Variable";
@@ -226,13 +219,12 @@ a:active {
   position: absolute;
   left: 235px;
   top: 824px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   height: 41px;
   font-family: "Pretendard Variable";
   font-size: 25px;
   color: #232323;
+  cursor: pointer;
 }
 .storeDetail #triangle {
   position: absolute;
@@ -276,18 +268,6 @@ a:active {
   margin-left: 20px;
   font-weight: 700;
 }
-.storeDetail #menu {
-  position: absolute;
-  left: 235px;
-  top: 864px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  font-family: "Pretendard Variable";
-  font-size: 20px;
-  color: #999999;
-  cursor: pointer;
-}
 .storeDetail .keywordArea div {
   position: absolute;
   top: 990px;
@@ -300,15 +280,9 @@ a:active {
   font-size: 25px;
   font-style: "medium";
   color: #232323;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .storeDetail .keywordArea div:nth-of-type(1) {
   left: 119px;

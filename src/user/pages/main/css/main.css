@@ -298,7 +298,7 @@ div .rightbtn {
 div .category h3 {
   position: absolute;
   left: calc(50% - 200.5px - 0.5px);
-  top: 65vw;
+  top: 68vw;
   font-family: "Bobaesum Jindo TTF";
   font-size: 2.5vw;
   color: #232323;
@@ -306,23 +306,37 @@ div .category h3 {
 div .category p {
   position: absolute;
   left: 40vw;
-  top: 68.5vw;
+  top: 71.5vw;
   font-family: "Pretendard Variable";
   font-size: 1.2vw;
   text-align: center;
   color: #232323;
 }
-div .category .gkstlr div {
+div .category div {
   position: absolute;
   width: 5vw;
   height: 2vw;
-  left: 20vw;
+  left: 15vw;
   top: 80vw;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
-div .category .gkstlr div p {
+div .category div:nth-of-type(2) {
+  left: 30.5vw;
+  top: 82vw;
+}
+div .category div:nth-of-type(3) {
+  left: 46vw;
+}
+div .category div:nth-of-type(4) {
+  left: 61.5vw;
+  top: 82vw;
+}
+div .category div:nth-of-type(5) {
+  left: 77vw;
+}
+div .category div p {
   color: #232323;
   position: absolute;
   left: 1.5vw;
@@ -332,6 +346,55 @@ div .category .gkstlr div p {
   font-size: 1.2vw;
   z-index: 5;
 }
-div .category .gkstlr div img {
+div .category img {
   width: 10vw;
+  border-radius: 10%;
+  position: absolute;
+  left: 12.5vw;
+  z-index: -1;
+  opacity: 0.8;
+  top: 76vw;
 }
+div .category img:nth-of-type(2) {
+  left: 28vw;
+  top: 78vw;
+}
+div .category img:nth-of-type(3) {
+  left: 43.5vw;
+}
+div .category img:nth-of-type(4) {
+  left: 59vw;
+  top: 78vw;
+}
+div .category img:nth-of-type(5) {
+  left: 74.5vw;
+}
+div .category img:hover {
+  opacity: 1;
+}
+div .category span {
+  position: absolute;
+  left: 14.5vw;
+  top: 87.5vw;
+  font-family: "Pretendard Variable";
+  font-weight: 500;
+  font-size: 20px;
+  color: #232323;
+  background-color: #FFF3A7;
+  padding: 0.5vw 1vw;
+  border-radius: 50px;
+}
+div .category span:nth-of-type(2) {
+  left: 30vw;
+  top: 89.5vw;
+}
+div .category span:nth-of-type(3) {
+  left: 45.5vw;
+}
+div .category span:nth-of-type(4) {
+  left: 61vw;
+  top: 89.5vw;
+}
+div .category span:nth-of-type(5) {
+  left: 77vw;
+}/*# sourceMappingURL=main.css.map */
