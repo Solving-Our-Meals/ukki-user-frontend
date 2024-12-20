@@ -19,87 +19,53 @@ function Login() {
         }));
     };
 
-    // // 아이디
-    // const handleUsernameSubmit = async (e) => {
-    //     e.preventDefault();
-    //
-    //     console.log("Submitting userId:", formData.userId);
-    //
-    //     const response = await fetch('/auth/login/username', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({ userId: formData.userId }),
-    //     });
-    //
-    //     const result = await response.json();
-    //     if (result.isValid) {
-    //         setStep(2);
-    //         setError('');
-    //     } else {
-    //         setError('아이디가 유효하지 않거나 존재하지 않습니다.');
-    //     }
-    // };
-    //
-    // // 비번
-    // const handlePasswordSubmit = async (e) => {
-    //     e.preventDefault();
-    //
-    //     console.log("Submitting password:", formData.userPass);
-    //
-    //     const response = await fetch('/auth/login/password', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({
-    //             userId: formData.userId,
-    //             userPass: formData.userPass,
-    //         }),
-    //     });
-    //
-    //     const result = await response.json();
-    //
-    //     if (result.success) {
-    //         setError('');
-    //         // 로그인 성공 후 리디렉션 처리
-    //         window.location.href = '/main';
-    //     } else {
-    //         setError(result.message || '비밀번호가 잘못되었습니다.');
-    //     }
-    // };
-
-    // 아이디 및 비밀번호 검사
-    const handleLoginSubmit = async (e) => {
+    // 아이디
+    const handleUsernameSubmit = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('/auth/login', {
+        const response = await fetch('/auth/login/step-one', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(formData),
+            body: JSON.stringify({ userId: formData.userId }),
+        });
+
+        const result = await response.json();
+        console.log(result.isValid)
+        if (result.isValid) {
+            setStep(2);
+            setError('');
+        } else {
+            setError('아이디가 유효하지 않거나 존재하지 않습니다.');
+        }
+    };
+
+    // 비번
+    const handlePasswordSubmit = async (e) => {
+        e.preventDefault();
+
+        console.log("Submitting password:", formData.userPass);
+
+        const response = await fetch('/auth/login/step-two', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                userId: formData.userId,
+                userPass: formData.userPass,
+            }),
         });
 
         const result = await response.json();
 
-        if (result.isValidUserId) {
-            // 아이디가 유효하면, 비밀번호 단계로 넘어가기
-            if (step === 1) {
-                setStep(2);
-                setError('');
-            }
-            // 비밀번호가 유효하면 로그인 성공
-            if (step === 2 && result.isValidPassword) {
-                setStep(3);
-                setError('');
-                window.location.href = '/main';
-            } else if (step === 2) {
-                setError('비밀번호가 틀렸습니다.');
-            }
+        if (result.success) {
+            setError('');
+            // 로그인 성공 후 리디렉션 처리
+            window.location.href = '/main';
         } else {
-            setError('아이디가 존재하지 않거나 유효하지 않습니다.');
+            setError(result.message || '비밀번호가 잘못되었습니다.');
         }
     };
 
@@ -113,7 +79,7 @@ function Login() {
                 <p className="loginText">로그인</p>
                 <img className="signupLogo" src="/images/signupLogo.png" alt="회원가입 로고"></img>
                 {step === 1 && (
-                    <form onSubmit={handleLoginSubmit}>
+                    <form onSubmit={handleUsernameSubmit}>
 
                         <fieldset className="fieldId">
                             <div className="inputWrapper">
@@ -137,7 +103,7 @@ function Login() {
 
                 {/* 비밀번호 입력받는 스탭 */}
                 {step === 2 && (
-                    <form onSubmit={handleLoginSubmit}>
+                    <form onSubmit={handlePasswordSubmit}>
                         <fieldset className="fieldPwd">
                             <div className="inputWrapper">
                                 <input
