@@ -45,8 +45,6 @@ function Login() {
     const handlePasswordSubmit = async (e) => {
         e.preventDefault();
 
-        console.log("Submitting password:", formData.userPass);
-
         const response = await fetch('/auth/login/step-two', {
             method: 'POST',
             headers: {
