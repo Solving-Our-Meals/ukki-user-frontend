@@ -365,7 +365,7 @@ function Signup() {
                             />
                         </fieldset>
                         <label className="termsLabel" htmlFor="terms">약관에 동의합니다.</label>
-                        {error && <p className="error">{error}</p>}
+                        {error && <p className="errorTerms">{error}</p>}
                         <button className="signupButton">완료</button>
                     </form>
                 )}

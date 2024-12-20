@@ -227,7 +227,8 @@ button:disabled {
 
 /* 약관 */
 .termsLabel {
-    top:250px;
+    top:400px;
+    left:500px;
     font-size: 16px;
     color: #333;
     font-weight: bold;
@@ -313,4 +314,14 @@ button:disabled {
     align-items: center;
     font-size: 20px;
     color: white;
+}
+
+.errorTerms {
+    position:absolute;
+    width: 500px;
+    height: 52.5px;
+    left: 375px;
+    top: 300px;
+    color : red;
+    line-height: 21px;
 }
