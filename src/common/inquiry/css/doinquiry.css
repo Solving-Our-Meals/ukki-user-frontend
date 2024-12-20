@@ -152,7 +152,7 @@ position: absolute;
 width: 255px;
 height: 44px;
 left: 57px;
-top: 549px;
+top: 570px;
 
 background: #FEDA00;
 border-radius: 50px;
@@ -309,8 +309,8 @@ cursor: pointer;
   }
   
   #inputDoContent{
-    padding-left: 5px;
-    padding-top: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
 
     position: absolute;
     width: 260px;
@@ -376,7 +376,7 @@ cursor: pointer;
     width: 100px;
     height: 19px;
     left: 14px;
-    top: 280px;
+    top: 290px;
 
     background: #FEDA00;
     border-radius: 50px;

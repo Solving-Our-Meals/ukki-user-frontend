@@ -16,6 +16,7 @@ import ukki from './image/ukiLemone.png';
 import '../../../common/header/css/reset.css';
 import './css/main.css';
 
+
 const banners = [banner1, banner2, banner3, banner4, banner5];
 const storeInfos = [
     { name: "해당 가게 이름1", time: "영업시간 10:00 - 22:00", desc: "가게 설명 가게 설명 가게 설명 가게 설명 가게 설명 가게 설명1" },
@@ -194,7 +195,8 @@ const Main = () => {
                     <input placeholder='눌러서 현재 위치 변경 가능'></input>
                     <p>가게 위치 : </p>
                     <input  placeholder='하남시 덕풍동로 90 802호'></input>
-                    <button>예약하기</button>
+                <button>예약하기</button>
+
                     <button>길안내</button>
                 </div>
 
