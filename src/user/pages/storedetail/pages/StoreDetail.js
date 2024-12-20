@@ -9,6 +9,16 @@ import KakaoMap from '../components/KakaoMap';
 
 function StoreDetail(){
 
+    const [colorMonday, setColorMonday] = useState("");
+    const [colorTuesday, setColorTuesday] = useState("");
+    const [colorWednesday, setColorWednesday] = useState("");
+    const [colorThursday, setColorThursday] = useState("");
+    const [colorFriday, setColorFriday] = useState("");
+    const [colorSaturday, setColorSaturday] = useState("");
+    const [colorSunday, setColorSunday] = useState("");
+
+    const [isNone, setIsNone] = useState(true);
+       
     const [storeInfo, setStoreInfo] = useState({
         storeNo : 0,
         storeName : "가게 이름",
@@ -56,10 +66,52 @@ function StoreDetail(){
         }
 
         console.log("dayOfWeek : " , dayOfWeek);
-    }, [storeInfo.operation]);
+    }, [storeInfo.operationTime]);
     
-    console.log("요일 : " , storeInfo.operationTime)
-    console.log("운영 시간 : ", storeInfo.currentOperationTime);
+    useEffect(() => {
+        if (storeInfo.operationTime.monday === "휴무") {
+            setColorMonday("#FF5D18");
+        } else {
+            setColorMonday("#323232");
+        }
+        if (storeInfo.operationTime.tuesday === "휴무") {
+            setColorTuesday("#FF5D18");
+        } else {
+            setColorTuesday("#323232");
+        }
+        if (storeInfo.operationTime.wednesday === "휴무") {
+            setColorWednesday("#FF5D18");
+        } else {
+            setColorWednesday("#323232");
+        }
+        if (storeInfo.operationTime.thursday === "휴무") {
+            setColorThursday("#FF5D18");
+        } else {
+            setColorThursday("#323232");
+        }
+        if (storeInfo.operationTime.friday === "휴무") {
+            setColorFriday("#FF5D18");
+        } else {
+            setColorFriday("#323232");
+        }
+        if (storeInfo.operationTime.saturday === "휴무") {
+            setColorSaturday("#FF5D18");
+        } else {
+            setColorSaturday("#323232");
+        }
+        if (storeInfo.operationTime.sunday === "휴무") {
+            setColorSunday("#FF5D18");
+        } else {
+            setColorSunday("#323232");
+        }
+    }, [storeInfo]);  
+
+    const onClickHandler = (e) => {
+        setIsNone(prevState => !prevState);
+    } 
+    
+    console.log("요일 별 운영시간 : " , storeInfo.operationTime);
+    console.log("오늘 운영 시간 : ", storeInfo.currentOperationTime);
 
     return(
         <div className={styles.storeDetail}>
@@ -70,8 +122,19 @@ function StoreDetail(){
             <p id={styles.storeDes}>{`식당 소개 : ${storeInfo.storeDes}`}</p>
             <img src={mapIcon} id={styles.mapIcon} alt = '지도 아이콘'/>
             <p id={styles.storeAddress}>{storeInfo.storeAddress}</p>
-            <p id={styles.operTime}>{`영업 시간(오늘) : ${storeInfo.currentOperationTime}`}</p> 
-            <img src={triangleBtn} id={styles.triangle} alt ="영업시간 더보기 버튼"/>
+            <p id={styles.operTime}>{`영업 시간(오늘) : ${storeInfo.currentOperationTime}`}</p>
+            <div id={styles.tatolOperTime} style={{ display : isNone ? "none" : "block" }}>
+                <p className={styles.week}>(월)</p>&ensp;<p className={styles.weekOperTime} style={{ color : colorMonday }}>{storeInfo.operationTime.monday}</p> <br/>
+                <p className={styles.week}>(화)</p>&ensp;<p className={styles.weekOperTime} style={{ color : colorTuesday }}>{storeInfo.operationTime.tuesday}</p> <br/>
+                <p className={styles.week}>(수)</p>&ensp;<p className={styles.weekOperTime} style={{ color : colorWednesday }}>{storeInfo.operationTime.wednesday}</p> <br/>
+                <p className={styles.week}>(목)</p>&ensp;<p className={styles.weekOperTime} style={{ color : colorThursday }}>{storeInfo.operationTime.thursday}</p> <br/>
+                <p className={styles.week}>(금)</p>&ensp;<p className={styles.weekOperTime} style={{ color : colorFriday }}>{storeInfo.operationTime.friday}</p> <br/>
+                <p className={styles.week}>(토)</p>&ensp;<p className={styles.weekOperTime} style={{ color : colorSaturday }}>{storeInfo.operationTime.saturday}</p> <br/>
+                <p className={styles.week}>(일)</p>&ensp;<p className={styles.weekOperTime} style={{ color : colorSunday }}>{storeInfo.operationTime.sunday}</p> <br/>
+                <p id={styles.breakTime}>{`*브레이크 타임 : ${storeInfo.operationTime.breakTime}`}</p> <br/>
+            </div>
+            <img src={triangleBtn} id={styles.triangle} onClick={onClickHandler} alt ="영업시간 더보기 버튼"/>
+            <p id={styles.menu}><u>메뉴 보기</u></p>
             <div id={styles.mapArea}><KakaoMap/></div>
             <div className={styles.keywordArea}>
                 <div>{storeInfo.storeKeyword.keyword1}</div>
