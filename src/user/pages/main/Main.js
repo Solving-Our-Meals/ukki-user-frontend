@@ -11,8 +11,11 @@ import didtlr from './image/image-1.png';
 import dlftlr from './image/image-2.png';
 import wndtlr from './image/image-3.png';
 import rlxk from './image/image-4.png';
+import qorqks from './image/store1.png';
+import ukki from './image/ukiLemone.png';
 import '../../../common/header/css/reset.css';
 import './css/main.css';
+import Map from '../main/component/Map';
 
 const banners = [banner1, banner2, banner3, banner4, banner5];
 const storeInfos = [
@@ -153,42 +156,34 @@ const Main = () => {
                 <div className='category'>
                     <h3>지금 끌리는 메뉴는?</h3>
                     <p>카테고리 별로 근처 식당을 추천해드려요!</p>
-                    <div className='gkstlr'>
                         <div>
                             <p>한식</p>
                         </div>
                         <img src={gkstlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='didtlr'>
                         <div>
                             <p>양식</p>
                         </div>
                         <img src={didtlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='dlftlr'>
                         <div>
                             <p>일식</p>
                         </div>
-                        <img src={didtlr} />
+                        <img src={dlftlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='wndtlr'>
                         <div>
                             <p>중식</p>
                         </div>
                         <img src={wndtlr} />
                         <span>흠..별로?</span>
-                    </div>
-                    <div className='rlxk'>
+
                         <div>
                             <p>기타</p>
                         </div>
                         <img src={rlxk} />
                         <span>흠..별로?</span>
-                    </div>
                 </div>
+              
             </div>
         </>
     );
