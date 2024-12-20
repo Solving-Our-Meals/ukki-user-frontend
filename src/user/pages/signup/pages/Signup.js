@@ -109,7 +109,8 @@ function Signup() {
         const emailCheckResult = await emailCheckResponse.json();
         if (emailCheckResult.isDuplicate) {
             setError('ⓘ 이 이메일은 이미 사용 중입니다.');
-            return;  // 이메일 중복 시 더 이상 진행하지 않음
+            setEmailPending(false);
+            return;
         }
 
         // 인증번호 전송
